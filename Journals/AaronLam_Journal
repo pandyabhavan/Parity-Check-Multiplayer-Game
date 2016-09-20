@@ -1,0 +1,7 @@
+Simplicity (Aaron Lam):
+
+	I will try to keep all the issues related to the project simple. I will make sure that my team will “do the simplest thing that could possibly work”. Review all the code to make sure that they are doing the least effort. My job is to ensure that all the team members follow the following rules (adapted from http://c2.com/cgi/wiki?XpSimplicityRules):
+Passes all the tests - All the codes and modules have to pass all the tests to be considered as done. I have to run all the tests at least once to check the code.
+Expresses every idea that we need to express - Remind my team members to organize classes in a readily understandable way, use appropriate names so we don't need additional documentation to explain things.
+Says everything Once And Only Once. Make sure that our codes have no duplication or methods with overlapping functions. 
+In addition, I will remind my team members to express their thought and idea in the simplest way possible so we can have a clear understanding of the concept.
