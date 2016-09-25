@@ -5,3 +5,12 @@ Passes all the tests - All the codes and modules have to pass all the tests to b
 Expresses every idea that we need to express - Remind my team members to organize classes in a readily understandable way, use appropriate names so we don't need additional documentation to explain things.
 Says everything Once And Only Once. Make sure that our codes have no duplication or methods with overlapping functions. 
 In addition, I will remind my team members to express their thought and idea in the simplest way possible so we can have a clear understanding of the concept.
+
+Simplicity (Aaron Lam):
+
+Passes all the tests - All the codes and modules have to pass all the tests to be considered as done. The team is still in the process of figuring and finalizing all the requirement for the project, therefore, no test has been written and to run against.
+Expresses every idea that we need to express - When my teammates express their idea, I try to make sure that they simple and easy to understand.
+Says everything Once And Only Once. Make sure that our codes have no duplication or methods with overlapping functions. The team is not in coding phase, but I still make sure that all the requirements have no redundancy and overlap. 
+
+To simplify the meeting process, I double checked all the idea and assigned topic to make sure that no overlap assignment.
+During the meeting, an idea come up that we implement multiplayer game as server/client model. The server will create a game and send a screen of the game to clients. Then, server will keep track and record when clients respond to calculate the game point. I considered that model was too complicated and didn’t fit the simplicity aspect of XP. I suggest that we can simplify the process by hand over all the game creation and user interaction to client’s machine. Server will only record the response time from clients and calculate the game score. This model will reduce the complexity of the game and reduce the traffic and data need to be sent between server and client.
