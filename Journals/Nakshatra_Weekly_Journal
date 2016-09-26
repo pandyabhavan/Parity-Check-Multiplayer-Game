@@ -10,4 +10,14 @@ My main KRA’s (Key Responsibility Areas) would be:
 2. Scheduling feedbacks sessions twice a week across team and if required individually too.
 3. Will be sharing the MOM (Minutes of Meeting) via email and also update it on shared spaces for other to refer if they want to.
 Along with the above specific points my main focus will remain on the Project growth and converting it to a successful product along with individual growth.
+--------------------------
+
+Date : 9/22/2016
+
+We had a two hours project and feedback meeting on Thursday 9/22/2016. This was specifically scheduled for gathering feedbacks from all, based on their respective ideas for game along with any suggestions for others to make it as much interactive and interesting as possible. During the entire meeting I made sure that we are collecting feedbacks from all the team mates and trying to amalgamate all feedbacks into a desired outcome.
+Initially an idea came up to make a multiplayer game with implementation of a client/server model, however it was quite understandable that this will probably increase the complexity of the entire project. So started taking suggestions and feedbacks from each other and based on that we came up with a new idea of still keeping the client/server model however we will be initiating the game and other things on the client side only and the scores and rank will be decided at server’s end.
+We also made a rough diagram and flow diagrams of the game (can be found in separate images on GIT ( https://github.com/pandyabhavan/CMPE-202 ) . Everybody was given a chance to modify and suggest any changes and finally we came up with the final diagrams, flow charts, class diagrams, state diagrams and use case diagrams.
+All in all, each one of the team mates made individual diagrams and will be sharing the same with all and on GIT as well. We also decided to have another session after completing the individual diagrams.
+
+--------------------------
 
