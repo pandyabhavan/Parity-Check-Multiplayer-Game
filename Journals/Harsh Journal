@@ -1,0 +1,14 @@
+Week#1
+
+
+
+
+
+Week#2
+
+I in Code Titans take care that every minute of our meetings if fruitful and yield some results.
+During this week#2 meeting on 9/22/2016, we discussed various ways about how the game can be presented so that its sole purpose of helping high school students understand parity check detection is fulfilled. Various possibilities were discussed.I take care that we don't divert from the topic so that the purpose of the meeting is fulfilled.
+
+Ultimately after various permutations and combinations, we decided to settle on a way that used the least of hardware overhead. We decided to implement minimum logic on the server and keep the maximum logic on client (users) so that the execution is fast and overhead of fetching information from server is minimised.
+
+We also have made the rough sketches, state diagram and use case diagram so that we can move ahead with a specific planning and prevent any redundancy and waste of time and resources.
