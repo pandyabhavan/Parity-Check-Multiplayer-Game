@@ -1,16 +1,17 @@
-Simplicity (Aaron Lam):
-
+Week#1 Journal
 	I will try to keep all the issues related to the project simple. I will make sure that my team will “do the simplest thing that could possibly work”. Review all the code to make sure that they are doing the least effort. My job is to ensure that all the team members follow the following rules (adapted from http://c2.com/cgi/wiki?XpSimplicityRules):
 Passes all the tests - All the codes and modules have to pass all the tests to be considered as done. I have to run all the tests at least once to check the code.
 Expresses every idea that we need to express - Remind my team members to organize classes in a readily understandable way, use appropriate names so we don't need additional documentation to explain things.
 Says everything Once And Only Once. Make sure that our codes have no duplication or methods with overlapping functions. 
 In addition, I will remind my team members to express their thought and idea in the simplest way possible so we can have a clear understanding of the concept.
 
-Simplicity (Aaron Lam):
-
-Passes all the tests - All the codes and modules have to pass all the tests to be considered as done. The team is still in the process of figuring and finalizing all the requirement for the project, therefore, no test has been written and to run against.
+Week#2 Journal
+	Passes all the tests - All the codes and modules have to pass all the tests to be considered as done. The team is still in the process of figuring and finalizing all the requirement for the project, therefore, no test has been written and to run against.
 Expresses every idea that we need to express - When my teammates express their idea, I try to make sure that they simple and easy to understand.
 Says everything Once And Only Once. Make sure that our codes have no duplication or methods with overlapping functions. The team is not in coding phase, but I still make sure that all the requirements have no redundancy and overlap. 
-
-To simplify the meeting process, I double checked all the idea and assigned topic to make sure that no overlap assignment.
+	To simplify the meeting process, I double checked all the idea and assigned topic to make sure that no overlap assignment.
 During the meeting, an idea come up that we implement multiplayer game as server/client model. The server will create a game and send a screen of the game to clients. Then, server will keep track and record when clients respond to calculate the game point. I considered that model was too complicated and didn’t fit the simplicity aspect of XP. I suggest that we can simplify the process by hand over all the game creation and user interaction to client’s machine. Server will only record the response time from clients and calculate the game score. This model will reduce the complexity of the game and reduce the traffic and data need to be sent between server and client.
+
+Week#3 Journal
+	There was no meeting this week. Team members were not able to find time to setup a meeting. Besides, because of Silicon Valley Code Camp and class cancellation, there was no quick meet up and discussion after class. The only alternative option was Google Hangout. Using Hangout is not as simple and efficient as face to face meeting since there is a significant delay in communication and feedback. Many ideas and topic need a lot more clarification on Hangout compare to face to face meeting. Throwing idea and ask for feedback or improvement is more complicated on Hangout. So, online chatroom is not a best way to communicate when we want to keep things simple. To keep the simplicity value of XP, we should use face to face meeting. However, online communication is still better than no communication at all.
+	To make online communication simpler, we can use video and audio chat. However, it’s still required all team members to be available at the time of the online conference.
