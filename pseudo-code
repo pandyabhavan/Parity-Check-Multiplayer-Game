@@ -1,0 +1,33 @@
+//We will finish and test the client side before we do multiplayer over the network.
+//functions with leading _ are functions to communicate with server
+
+//==================================================
+//if we want x by y board
+public class Size {
+    public int x;
+    public int y;
+}
+
+//get the size of the board from server
+//we can manualy input the Size to test 
+_getBoardSize(Object Size)
+
+//==================================================
+//if we want a square board then we don't need class Size
+void _getBoardSize(int size)
+
+//create a single error on the board
+void setError() 
+
+//after setError, timer will run
+void startTimer()
+
+//we have to get user input, I'm not sure how, and stop the timer
+//I will do more research
+
+//after the user clicks the card, we will set the score back to server
+void _sendScore(int accuracy, int time) {
+    int score = accuracy * accuracy_weight + time * time_weight;
+    set score to server
+}
+
