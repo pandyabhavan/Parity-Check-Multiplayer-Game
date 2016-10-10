@@ -1,0 +1,12 @@
+(This XP value is chosen by me from the list of values Prof. Paul provided here: 
+https://sjsu.instructure.com/courses/1210684/pages/cmpe-202-cs-unplugged-team-project-part-1 )
+	
+	In the team meeting held this week, we finally decided the architecture and process flow of the entire project. 
+Keeping in mind the goal of minimising the waste of time and resources we further revised all the UML diagrams and architecture of the 
+project. I revised the sequence diagram to eliminate all the unnecessary function calls and object creation.
+There were certain modifications required in class diagram were also done and updated on github repository.
+
+	To eliminate the waste of time of players who play the game, we decided to give hint if they are stuck 
+somewhere in the game. This decision have further brought revisions in all the UML diagrams. 
+Since now we are ready with all the drafting and designing of the game flow, we are set to start development in the next week. 
+Aaron has already designed an abstract code which will be finalised after proper review and discussion in the coming week.
