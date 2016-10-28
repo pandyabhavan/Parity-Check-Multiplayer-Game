@@ -13,3 +13,7 @@ Created a layout and worked on how network will be involved in Game.
 Completed the class diagram and committed in GitHub.
 Awaiting the review fro mthe team. 
 Need to have team meeting to distribute the work among team members.
+
+In order to achieve predescribed goal, I set up an weekly sprint meeting on Thursday 9/15. As an output of the meeting, we came up with final design for the multiplayer game. In this 1 hour discussion, I kept the discussion very crisp and sharp. Also, we are having daily 5-10 min discussion about what is the updates from everyone on Google Hangouts Group. We have also committed rough work we have done as part of sprint meeting in GitHub for better idea at the end of Project, how our idea progressed and how our communication came up with the great value to the project. 
+As part of project, we will be creating a Client Server game in which multiple clients would interact with a server and score and rank would be maintained in server. In order to have lesser load on server and less communication (to make game less reliable on network); we have come up with an idea of calculating major things on client and server would mainly contain the database of the rank of each player. That said, we also came up with the state diagram for the project and soon we will held another meeting in early next week to complete Class and Sequence Diagrams for the project. Meanwhile, we will keep having updates on each other on Google Hangouts group.
+
