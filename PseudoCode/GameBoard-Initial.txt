@@ -1,0 +1,29 @@
+public class GameBoardInitial{
+
+//TaskBar Content
+void displayTitleBarContent(){}
+
+//Display Player Name	
+void displayName(String name){}
+
+// Display level on screen
+void displayLevel(int level){}
+
+/*
+DisplayBoard According to levels
+For level 1 = 5X5
+For level 2 = 7X7
+For level 3 = 9X9
+For level 4 = 11X11
+For level 5 = 15X15
+*/
+void displayBoard(int level){}
+
+//Game will start in 30 sec, Time will display on screen
+void startGame(){
+//Goto GameBoard - sent level size
+}
+
+//If clicked on Quit button
+void exitGame(){}
+}

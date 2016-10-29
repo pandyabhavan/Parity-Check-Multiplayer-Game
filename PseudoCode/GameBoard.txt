@@ -1,0 +1,41 @@
+public class GameBoard{
+
+//TaskBar Content
+void displayTitleBarContent(){}
+
+//Display Player Name	
+void displayName(String name){}
+
+// Display level on screen
+void displayLevel(int level){}
+
+// Display Time Taken MM:SS format
+void startTimer(){}
+
+/*
+DisplayBoard According to levels
+For level 1 = 5X5
+For level 2 = 7X7
+For level 3 = 9X9
+For level 4 = 11X11
+For level 5 = 15X15
+Random Wrong Board will display
+*/
+void displayBoard(int level){
+/*
+If wrong ans selected display red label on block
+If wrong ans selected display green label on block
+*/
+}
+
+//Score Calculation on the basis of accuracy and time
+void calculateScore(){}
+
+//If clicked on Submit button
+void submitGame(){
+//Submit game score
+}
+
+//If clicked on Quit button
+void exitGame(){}
+}
