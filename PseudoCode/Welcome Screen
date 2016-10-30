@@ -1,0 +1,15 @@
+public class Welcome
+{
+Welcome()
+{
+//mesage to display on welcome screen
+}
+public Login(String user, String pass)
+{
+//User login verification
+}
+public boolean connection(connection credetials)
+{
+//All the connection credentials
+}
+}
