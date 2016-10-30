@@ -1,7 +1,6 @@
 HashMap <String, int> playerNameLevel // <playerName, playerLevel>
 HashMap <String, int> playerNameScore // <playername, score>
 TreeMap <int, String> highScore // act as database for high score, user TreeMap for sorting
-int minScore;
 
 //playerNameLevel and playerNameScore can be stored on RAM at runtime only
 //highScore can be stored on RAM only, or can be saved to disk as backup then load to
@@ -71,9 +70,7 @@ public void setScore (String playerName, int correctScore, int time) {
 	search playerNameScore to find playerName {
 		if (playerName exist) {
 			set playerName score to finalScore
-			if (finalScore >= minScore) {
-				add player to highScore TreeMap
-			}
+			add player to highScore TreeMap
 		}
 		else {
 			ERROR!
