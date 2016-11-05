@@ -24,3 +24,6 @@ Week#5 Journal
 	The keep the simplicity value of the project, I make sure that all the assigned tasks are not overlap each other. All the tasks should be able to develop independently. Team members understand and clear about their assigned assignment. During meeting, I always make sure that all the member's idea are simple and easy to understand. All the proposal should be clearly defined and without any possible misunderstanding. 
 	I am assigned with the task to complete pseudo code for the server side. I created all the function call with the goal: simple to use, simple to understand, and minimize the resource requirement. I also create some protocols to ensure clear communication between server and client. Also, protocols should use minimum network resources and only send data over network when it's necessary.
 	I choose HashMap to store username and their current state for fast and simple look up. On the other hand, I use TreeMap to store player high score to simplify insertion and sorting. Since server will have to return a sorted high score back to client, TreeMap is the simplest and best choice.
+
+Week#6 Journal
+	
