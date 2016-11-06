@@ -1,8 +1,9 @@
 
- 
+
 void setup() {
-  size(800, 800);
+  size(700, 700);
   background(255,255,153);
+  
   noLoop(); 
 }
  
@@ -49,7 +50,7 @@ void draw() {
   f = createFont("Times New Roman",16,true);
   textFont(f,48);  
   fill(0,0,0);
-  text("The Code Titans - Game ", 150, 100);
+  text("The Code Titans - Game ", 100,50);
   
   BLOCKX = 500/lengthOfBoard;
   BLOCKY = 500/lengthOfBoard;
@@ -68,7 +69,7 @@ void draw() {
         //fill(0, 0, 0); // black
         fill(0,220,0); // orange
       }
-      rect((i * BLOCKX)+150, (j * BLOCKY)+150, BLOCKX-10, BLOCKY-10, 50);
+      rect((i * BLOCKX)+100, (j * BLOCKY)+100, BLOCKX-10, BLOCKY-10, 50);
     
       
     } 
@@ -76,27 +77,21 @@ void draw() {
   // Drawing Buttons //
   
   // Insert quit Button
-  
-  int qw,qh,qx,qy;
-  qw = 80;
-  qh = 50;
-  
- 
- 
+  fill(192,192,192); // grey
+  rect(100,650,80,30);
+  fill(192,192,192); // grey
+  rect(400,650,80,30);
   
   String q = "QUIT";
-  textSize(12);
-  fill(0, 0, 0); // black
-  text (q, 150, 700, 100, 100);
+  textSize(14);
+  fill(0,0,0); // black
+  text (q, 115, 655, 100, 100);
   String s = "SUBMIT";
-  textSize(12);
-  fill(0, 0, 0); // black
-  text (s, 400, 700 ,100,100);
+  textSize(14);
+  fill(0, 0,0); // black
+  text (s, 415, 655 ,100,100);
   
-  fill(255, 255, 255); // white
-  rect(150,700,80,50);
-  fill(255, 255, 255); // white
-  rect(400,700,80,50);
-  
+  // timer setup
+
   
 }
