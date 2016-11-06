@@ -26,4 +26,6 @@ Week#5 Journal
 	I choose HashMap to store username and their current state for fast and simple look up. On the other hand, I use TreeMap to store player high score to simplify insertion and sorting. Since server will have to return a sorted high score back to client, TreeMap is the simplest and best choice.
 
 Week#6 Journal
-	
+	This week we start to coding the prototype for our project. To keep the simplicity value of the project, I try to make sure that the pseudo code and the API of the project are well define. I make all my code as simple to understand as possible. I named all my variables and function calls with simple and descriptive name, so my teammate can understand them without asking me for explanation or have to read through all the code to understand the function of function calls. 
+	Also, we all so writing test cases. I try to think of all test cases to cover all the possible scenarios without overlapping. Test cases should test all the components of our code modules independently so we can identify the problem. Test cases also cover possible user mistake or any problem not arise from bugs in project codes, such as network disconnection or program crashing. Since we have server side and client side, we have to write test case for both side, and make sure no redundancy test cases. Also, we have to make sure that our test cover all scenarios from both side. 
+	In addition, during team meeting, I also make sure that all my teammate’s ideas are simple and easy to understand. No overlap or redundancy in our ideas or proposals.
