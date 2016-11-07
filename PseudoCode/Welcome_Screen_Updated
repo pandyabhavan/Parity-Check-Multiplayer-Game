@@ -1,0 +1,32 @@
+public class Welcome
+{
+String name;
+Connection conn;
+boolean correct=false;
+Welcome(String name)
+{
+//mesage to display on welcome screen
+this.name=name;
+}
+public Login(String user, String pass)
+{
+//User login verification
+conn=connection(String credentials);
+correct=verify(user, pass);
+if(correct==true)
+{
+//next window
+}
+else
+{
+//retry 
+//redirect to welcome screen again
+}
+}
+public Connection connection(connection credetials)
+{
+//All the connection credentials
+}
+}
+
+
