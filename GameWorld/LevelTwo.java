@@ -14,6 +14,6 @@ public class LevelTwo extends Board
      */
     public void act() 
     {
-        // Add your action code here.
+        // Add your action code here
     }    
 }

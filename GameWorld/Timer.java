@@ -14,7 +14,7 @@ public class Timer extends Actor
     private int count; // the counter field
     private int initialCount; // the initial time given before event occurs
     private boolean running;
- 
+
     public Timer()
     {
         this(0, true);
@@ -42,7 +42,9 @@ public class Timer extends Actor
     {
         String prefix = "T - ";
         if (count >= 0){
-           running = false; 
+           running = false;
+           GameWorld gameWorld = new GameWorld();
+           gameWorld.setGame();
         }
         int time = count * (int)Math.signum(count);
         time = time / 60;
