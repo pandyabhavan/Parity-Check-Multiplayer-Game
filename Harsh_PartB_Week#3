@@ -1,0 +1,14 @@
+Eliminate Waste (Harsh Mehta)
+
+During this week we met on Tuesday, 11/8 and decided to come up with the final idea and changes for the game.
+We coded almost every screen on the client side, that interacts with client.
+Proper method calls and return types were discussed so that no time and resources are wasted at the time of integration.
+
+Moreover, a number of drawbacks and issues were faced while coding in Processing tool. Moreover, a lot of code redundancies and efforts 
+were estimated in developing game in processing so we decided to use Greenfoot as our IDE. This saved us all the time we would have 
+invested in coding and itegrating code in procesing.
+
+During the meeting we decided to strictly follow Object Oriented Concepts and design patterns to keep the code modular and easy to debug 
+and hence simplifying the task of error solving and debugging.
+
+We also have decided to carry out the video tutorial for teaching non-CS students on campus during this meeting. 
