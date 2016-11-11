@@ -14,8 +14,7 @@ test: compile app
 
 compile: 
 	javac -cp dist/restlet.jar:dist/restlet-json.jar:dist/json.jar -d build \
-	src/server/*.java \
-	clients/loadtestclient/*.java \
+	src/gameServer/*.java \
 	src/api/*.java
 
 run:

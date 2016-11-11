@@ -3,7 +3,7 @@
 # Container
 
 ACCOUNT=""
-CONTAINER="gumball"
+CONTAINER="gameMachine"
 VERSION="latest"
 
 # Shell Variables
