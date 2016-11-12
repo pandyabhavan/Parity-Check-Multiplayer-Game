@@ -16,7 +16,7 @@ public class GameServer extends Application {
 	@Override
 	public Restlet createInboundRoot() {
 		Router router = new Router(getContext());
-		router.attach("/gameServer", GumballResource.class);
+		router.attach("/gameServer", GameServerResource.class);
 		return router;
 	}
 

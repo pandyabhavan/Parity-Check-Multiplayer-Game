@@ -7,10 +7,10 @@ clean:
 	find . -name "*.class" -exec rm -rf {} \;
 
 app: compile
-	cd build ; jar -cvfe ../dist/app.jar serverServer .
+	cd build ; jar -cvfe ../dist/app.jar GameServer .
 
 test: compile app
-	java -cp dist/restlet.jar:dist/restlet-json.jar:dist/json.jar:dist/app.jar api.serverServer
+	java -cp dist/restlet.jar:dist/restlet-json.jar:dist/json.jar:dist/app.jar api.GameServer
 
 compile: 
 	javac -cp dist/restlet.jar:dist/restlet-json.jar:dist/json.jar -d build \
@@ -19,7 +19,7 @@ compile:
 
 run:
 	echo Starting Service at:  http://localhost:8080
-	java -cp build:dist/restlet.jar:dist/restlet-json.jar:dist/json.jar api.serverServer
+	java -cp build:dist/restlet.jar:dist/restlet-json.jar:dist/json.jar api.GameServer
 
 loadtest:
 	echo Starting Load Test on localhost

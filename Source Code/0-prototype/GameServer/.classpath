@@ -7,5 +7,14 @@
 	<classpathentry exported="true" kind="lib" path="dist/json.jar"/>
 	<classpathentry exported="true" kind="lib" path="dist/restlet-json.jar"/>
 	<classpathentry exported="true" kind="lib" path="dist/restlet.jar"/>
+	<classpathentry kind="lib" path="dist/jackson-annotations-2.8.3.jar"/>
+	<classpathentry kind="lib" path="dist/jackson-core-2.8.3.jar"/>
+	<classpathentry kind="lib" path="dist/jackson-databind-2.8.3.jar"/>
+	<classpathentry kind="lib" path="dist/jackson-dataformat-csv-2.8.3.jar"/>
+	<classpathentry kind="lib" path="dist/jackson-dataformat-smile-2.8.3.jar"/>
+	<classpathentry kind="lib" path="dist/jackson-dataformat-xml-2.8.3.jar"/>
+	<classpathentry kind="lib" path="dist/jackson-dataformat-yaml-2.8.3.jar"/>
+	<classpathentry kind="lib" path="dist/restlet-jackson.jar"/>
+	<classpathentry kind="lib" path="dist/gson-2.2.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -86,3 +86,133 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2016-11-11 10:28:26.976
 !MESSAGE which: no git in (/usr/local/bin:/usr/bin:/cygdrive/c/Program Files/Java/jdk1.8.0_66/jre/bin/server:/cygdrive/c/Program Files/Java/jdk1.8.0_66/jre/bin:/cygdrive/c/Program Files/Java/jdk1.8.0_66/jre/lib/amd64:/cygdrive/c/Program Files/Haskell/bin:/cygdrive/c/Program Files/Haskell Platform/7.10.2-a/lib/extralibs/bin:/cygdrive/c/Program Files/Haskell Platform/7.10.2-a/bin:/cygdrive/c/ProgramData/Oracle/Java/javapath:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/Program Files (x86)/AMD/ATI.ACE/Core-Static:/cygdrive/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit:/cygdrive/c/Program Files/Microsoft SQL Server/110/Tools/Binn:/cygdrive/c/Program Files (x86)/Microsoft SDKs/TypeScript/1.0:/cygdrive/c/Program Files/Microsoft SQL Server/120/Tools/Binn:/cygdrive/c/Program Files (x86)/MySQL/MySQL Fabric 1.5.4 & MySQL Utilities 1.5.4 1.5:/cygdrive/c/Program Files (x86)/MySQL/MySQL Fabric 1.5.4 & MySQL Utilities 1.5.4 1.5/Doctrine extensions for PHP:/cygdrive/c/Program Files (x86)/ATI Technologies/ATI.ACE/Core-Static:/cygdrive/c/Program Files (x86)/CodeBlocks/MinGW/bin:/cygdrive/c/Program Files/Haskell Platform/7.10.2-a/mingw/bin:/usr/bin:/cygdrive/c/Program Files/Java/jdk1.8.0_66/bin:/cygdrive/c/Program Files (x86)/Java/jre1.8.0_60/bin:/cygdrive/c/Program Files/MySQL/MySQL Server 5.6/bin:/cygdrive/c/Program Files/Apache Software Foundation/Tomcat 9.0/bin:/cygdrive/c/Program Files (x86)/Brackets/command:/cygdrive/c/Program Files (x86)/QuickTime/QTSystem:/cygdrive/c/Users/Aaron/AppData/Roaming/cabal/bin:/usr/bin:/cygdrive/c/Program Files/Java/jdk1.8.0_66/bin:/cygdrive/c/Users/Aaron/AppData/Local/Microsoft/WindowsApps:/cygdrive/e/Downloads/php-7.0.11-Win32-VC14-x64:/cygdrive/c/altera_lite/16.0/modelsim_ase/win32aloem:/cygdrive/c/WINDOWS/system32)
 
+!SESSION 2016-11-11 14:30:14.472 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-11-11 14:30:40.413
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Aaron'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-11-11 14:30:43.115
+!MESSAGE which: no git in (/usr/local/bin:/usr/bin:/cygdrive/c/Program Files/Java/jdk1.8.0_66/jre/bin/server:/cygdrive/c/Program Files/Java/jdk1.8.0_66/jre/bin:/cygdrive/c/Program Files/Java/jdk1.8.0_66/jre/lib/amd64:/cygdrive/c/Program Files/Haskell/bin:/cygdrive/c/Program Files/Haskell Platform/7.10.2-a/lib/extralibs/bin:/cygdrive/c/Program Files/Haskell Platform/7.10.2-a/bin:/cygdrive/c/ProgramData/Oracle/Java/javapath:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/Program Files (x86)/AMD/ATI.ACE/Core-Static:/cygdrive/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit:/cygdrive/c/Program Files/Microsoft SQL Server/110/Tools/Binn:/cygdrive/c/Program Files (x86)/Microsoft SDKs/TypeScript/1.0:/cygdrive/c/Program Files/Microsoft SQL Server/120/Tools/Binn:/cygdrive/c/Program Files (x86)/MySQL/MySQL Fabric 1.5.4 & MySQL Utilities 1.5.4 1.5:/cygdrive/c/Program Files (x86)/MySQL/MySQL Fabric 1.5.4 & MySQL Utilities 1.5.4 1.5/Doctrine extensions for PHP:/cygdrive/c/Program Files (x86)/ATI Technologies/ATI.ACE/Core-Static:/cygdrive/c/Program Files (x86)/CodeBlocks/MinGW/bin:/cygdrive/c/Program Files/Haskell Platform/7.10.2-a/mingw/bin:/usr/bin:/cygdrive/c/Program Files/Java/jdk1.8.0_66/bin:/cygdrive/c/Program Files (x86)/Java/jre1.8.0_60/bin:/cygdrive/c/Program Files/MySQL/MySQL Server 5.6/bin:/cygdrive/c/Program Files/Apache Software Foundation/Tomcat 9.0/bin:/cygdrive/c/Program Files (x86)/Brackets/command:/cygdrive/c/Program Files (x86)/QuickTime/QTSystem:/cygdrive/c/Users/Aaron/AppData/Roaming/cabal/bin:/usr/bin:/cygdrive/c/Program Files/Java/jdk1.8.0_66/bin:/cygdrive/c/Users/Aaron/AppData/Local/Microsoft/WindowsApps:/cygdrive/e/Downloads/php-7.0.11-Win32-VC14-x64:/cygdrive/c/altera_lite/16.0/modelsim_ase/win32aloem:/cygdrive/c/WINDOWS/system32)
+
+!SESSION 2016-11-11 18:30:37.509 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-11-11 18:32:35.983
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Aaron'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-11-11 18:32:39.299
+!MESSAGE which: no git in (/usr/local/bin:/usr/bin:/cygdrive/c/Program Files/Java/jdk1.8.0_66/jre/bin/server:/cygdrive/c/Program Files/Java/jdk1.8.0_66/jre/bin:/cygdrive/c/Program Files/Java/jdk1.8.0_66/jre/lib/amd64:/cygdrive/c/Program Files/Haskell/bin:/cygdrive/c/Program Files/Haskell Platform/7.10.2-a/lib/extralibs/bin:/cygdrive/c/Program Files/Haskell Platform/7.10.2-a/bin:/cygdrive/c/ProgramData/Oracle/Java/javapath:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/Program Files (x86)/AMD/ATI.ACE/Core-Static:/cygdrive/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit:/cygdrive/c/Program Files/Microsoft SQL Server/110/Tools/Binn:/cygdrive/c/Program Files (x86)/Microsoft SDKs/TypeScript/1.0:/cygdrive/c/Program Files/Microsoft SQL Server/120/Tools/Binn:/cygdrive/c/Program Files (x86)/MySQL/MySQL Fabric 1.5.4 & MySQL Utilities 1.5.4 1.5:/cygdrive/c/Program Files (x86)/MySQL/MySQL Fabric 1.5.4 & MySQL Utilities 1.5.4 1.5/Doctrine extensions for PHP:/cygdrive/c/Program Files (x86)/ATI Technologies/ATI.ACE/Core-Static:/cygdrive/c/Program Files (x86)/CodeBlocks/MinGW/bin:/cygdrive/c/Program Files/Haskell Platform/7.10.2-a/mingw/bin:/usr/bin:/cygdrive/c/Program Files/Java/jdk1.8.0_66/bin:/cygdrive/c/Program Files (x86)/Java/jre1.8.0_60/bin:/cygdrive/c/Program Files/MySQL/MySQL Server 5.6/bin:/cygdrive/c/Program Files/Apache Software Foundation/Tomcat 9.0/bin:/cygdrive/c/Program Files (x86)/Brackets/command:/cygdrive/c/Program Files (x86)/QuickTime/QTSystem:/cygdrive/c/Users/Aaron/AppData/Roaming/cabal/bin:/usr/bin:/cygdrive/c/Program Files/Java/jdk1.8.0_66/bin:/cygdrive/c/Users/Aaron/AppData/Local/Microsoft/WindowsApps:/cygdrive/e/Downloads/php-7.0.11-Win32-VC14-x64:/cygdrive/c/altera_lite/16.0/modelsim_ase/win32aloem:/cygdrive/c/WINDOWS/system32)
+
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 9 2016-11-11 18:38:57.977
+!MESSAGE The model index service was accessed either before it started or after it finished running.
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:126)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelIndex.suggest(EclipseModelIndex.java:212)
+	at org.eclipse.recommenders.models.SimpleModelProvider.acquireModel(SimpleModelProvider.java:70)
+	at org.eclipse.recommenders.models.PoolingModelProvider.access$0(PoolingModelProvider.java:1)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:96)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:1)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1220)
+	at org.eclipse.recommenders.models.PoolingModelProvider.acquireModel(PoolingModelProvider.java:67)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:65)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:1)
+	at org.eclipse.recommenders.internal.models.rcp.PrefetchModelArchiveJob.run(PrefetchModelArchiveJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2016-11-11 18:45:32.570
+!MESSAGE Full project indexing required:
+  [+] E:\Google Drive\SJSU MS\Fall 2016\CMPE 202\Project\CMPE-202\Source Code\0-prototype\GameServer\dist\jackson-annotations-2.8.3.jar
+  [+] E:\Google Drive\SJSU MS\Fall 2016\CMPE 202\Project\CMPE-202\Source Code\0-prototype\GameServer\dist\jackson-core-2.8.3.jar
+  [+] E:\Google Drive\SJSU MS\Fall 2016\CMPE 202\Project\CMPE-202\Source Code\0-prototype\GameServer\dist\jackson-databind-2.8.3.jar
+  [+] E:\Google Drive\SJSU MS\Fall 2016\CMPE 202\Project\CMPE-202\Source Code\0-prototype\GameServer\dist\jackson-dataformat-csv-2.8.3.jar
+  [+] E:\Google Drive\SJSU MS\Fall 2016\CMPE 202\Project\CMPE-202\Source Code\0-prototype\GameServer\dist\jackson-dataformat-smile-2.8.3.jar
+  [+] E:\Google Drive\SJSU MS\Fall 2016\CMPE 202\Project\CMPE-202\Source Code\0-prototype\GameServer\dist\jackson-dataformat-xml-2.8.3.jar
+  [+] E:\Google Drive\SJSU MS\Fall 2016\CMPE 202\Project\CMPE-202\Source Code\0-prototype\GameServer\dist\jackson-dataformat-yaml-2.8.3.jar
+  [+] E:\Google Drive\SJSU MS\Fall 2016\CMPE 202\Project\CMPE-202\Source Code\0-prototype\GameServer\dist\restlet-jackson.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1662)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1652)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1486)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1462)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2074)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2253)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5521)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:105)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:118)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2016-11-11 19:20:16.884
+!MESSAGE Full project indexing required:
+  [+] E:\Google Drive\SJSU MS\Fall 2016\CMPE 202\Project\CMPE-202\Source Code\0-prototype\GameServer\dist\gson-2.2.2.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1662)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1652)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1486)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1462)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2074)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2253)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5521)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:105)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:118)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
