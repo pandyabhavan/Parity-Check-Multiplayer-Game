@@ -11,5 +11,9 @@ public Login(String user, String pass)
 public boolean connection(connection credetials)
 {
 //All the connection credentials
+
+
+//Connect to AWS server 
+//Docker connection code
 }
 }
