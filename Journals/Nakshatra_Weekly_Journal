@@ -69,3 +69,16 @@ Date : 11/05/2016
 We had a meeting on 5th Nov to be able to gather each other’s feedback and suggestion regarding the pseudo codes for UI and functionality. Based on the discussions and feedback thus collected we started converting the same to the codes specifically starting from the processing sketches for Game Start page and Game Board page.
 We shared the codes with each other and based on the feedback improved them constantly. Also asked others to be proactive in sharing the feedbacks and if possible regularly add the comments whenever needed.
 As per the feedback from all , for this week we will be working on the individual components and in next meeting we will work on assembling the components together resulting in a working prototype.
+
+--------------------------
+
+Date : 11/13/2016
+
+Nakshatra (Feedback)
+We had a meeting on 8th of nov, and started coding based on the prototype. 
+We started developing the UI and backend logic for the game and placing the Bits on the GameBoard. 
+We developed a small prototype and asked all to share the feedbacks on the same. 
+Based on the feedbacks improved the same and also implemented the Timer after discussing with all.
+Discussed with all to commit the code on the GITHUB and add individual reviews / feedbacks to improvise the design to further work on the same.
+Also discussed with all to share their feedbacks on further implementations of variables and calls between different modules for effective integration. So the respective teammates shared their codes with each other to manipulate their classed according to the call from the other modules.
+Feedback will be playing an effective role while deciding about the next meetings for integrating everything together. 
