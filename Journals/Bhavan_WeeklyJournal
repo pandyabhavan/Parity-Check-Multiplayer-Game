@@ -34,10 +34,14 @@ Early planning always helps in completing the task early. Keeping this in mind w
 As a coding part, I was assigned to design two pages; one to display the score for previous level and navigate to the next level to user and also sending the score details to server to store it temporarily and second, display the final result to the user after he completed all levels and show the rank to the user. I completed the GUI part without integrating to the server coding is still in progress. 
 
 
-We reviewed the code on saturday for each other and integrated the code as a continuous integration. Once server is up & running; I will integrate the code with the server. During saturday meeting; we also decided to integrate the design pattern into the prototype we have developed so far.
-
+We reviewed the code on saturday for each other and integrated the code as a continuous integration. Once server is up & running;
+I will integrate the code with the server. During saturday meeting; 
+we also decided to integrate the design pattern into the prototype we have developed so far.
 
 We are planning to complete the coding part by next wednesday and start working on documentation for the project and working on extra credit video. 
+
+
+
 
 
 
