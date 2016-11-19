@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 9/18
 Quoting from www.exteremeprogramming.org ; “Everyone is part of the team and we communicate face to face daily. We will work together on everything from requirements to code. We will create the best solution to our problem that we can together.” I will always try my level best to have effective communication among team members as well as outside the team.
 	To achieve the above goal, I came up with the group on Google Hangouts to have daily discussion and daily updates from each team member for transparency. Along with that, we should have one/two (based on need) weekly meetings to discuss common issues or solutions we need to come up with the simple and best solution for the problems/tasks. 
@@ -27,3 +28,56 @@ As my part of work, I had been assigned to create a pseudo code for going to the
 In next team meeting, we will decide how we are going to implement the patterns in our project and how each one of us can work on the pattern in an independent modules. Not only finding the independent modules in the project, we will also put our thought process on how we will integrate the work of everyone in given time boundary and start working on UI screens and start creating APIs for project.
 
 
+=======
+9/18
+Quoting from www.exteremeprogramming.org ; “Everyone is part of the team and we communicate face to face daily. We will work together on everything from requirements to code. We will create the best solution to our problem that we can together.” I will always try my level best to have effective communication among team members as well as outside the team.
+	To achieve the above goal, I came up with the group on Google Hangouts to have daily discussion and daily updates from each team member for transparency. Along with that, we should have one/two (based on need) weekly meetings to discuss common issues or solutions we need to come up with the simple and best solution for the problems/tasks. 
+	Communication not only includes communication within the team members but also includes how we present our project or how we communicate to another person regarding our project. In order to improve communication of each team member; we will go to 5  complete strangers in college and will play a game with them which will in turn fetch us extra credits as a bonus along with improved communication. Also, I will try to keep our presentations sharp and crispy to professor as well as audience.
+As I have taken communication as a core value, I will ensure that there are no communication gaps among the team members and no conflicts should occur due the same. I will always strive of the transparent team communication among us to have the great project journey ahead.
+
+9/22
+Held a meeting in libaray to finalize the game layout and create diagrams.
+Game layout finalized after an hour long discussion.
+Created a layout and worked on how network will be involved in Game.
+
+10/2
+Completed the class diagram and committed in GitHub.
+Awaiting the review fro mthe team. 
+Need to have team meeting to distribute the work among team members.
+
+In order to achieve predescribed goal, I set up an weekly sprint meeting on Thursday 9/15. As an output of the meeting, we came up with final design for the multiplayer game. In this 1 hour discussion, I kept the discussion very crisp and sharp. Also, we are having daily 5-10 min discussion about what is the updates from everyone on Google Hangouts Group. We have also committed rough work we have done as part of sprint meeting in GitHub for better idea at the end of Project, how our idea progressed and how our communication came up with the great value to the project. 
+As part of project, we will be creating a Client Server game in which multiple clients would interact with a server and score and rank would be maintained in server. In order to have lesser load on server and less communication (to make game less reliable on network); we have come up with an idea of calculating major things on client and server would mainly contain the database of the rank of each player. That said, we also came up with the state diagram for the project and soon we will held another meeting in early next week to complete Class and Sequence Diagrams for the project. Meanwhile, we will keep having updates on each other on Google Hangouts group.
+
+10/30
+For this week, we had a in person meeting on friday and decided the next course of action. 
+We distributed the work among us and created user stories. 
+Also, we discussed on how we will proceed to code and what would be course of action until our project ends in next 4 weeks. 
+
+As my part of work, I had been assigned to create a pseudo code for going to the next level of the game and getting and displaying results from the server i.e. showing rank to the user.  Our goal for the next week is to complete the pseudo code and start actual coding in the project and work on the prototype and dockrise the project structure for better efficiency. 
+
+In next team meeting, we will decide how we are going to implement the patterns in our project and how each one of us can work on the pattern in an independent modules. Not only finding the independent modules in the project, we will also put our thought process on how we will integrate the work of everyone in given time boundary and start working on UI screens and start creating APIs for project.
+
+
+
+Early planning always helps in completing the task early. Keeping this in mind we had a weekly team meeting on Tuesday. We divided tasks among us to be completed by Saturday and decided to compile the code after class.
+
+
+As a coding part, I was assigned to design two pages; one to display the score for previous level and navigate to the next level to user and also sending the score details to server to store it temporarily and second, display the final result to the user after he completed all levels and show the rank to the user. I completed the GUI part without integrating to the server coding is still in progress. 
+
+
+We reviewed the code on saturday for each other and integrated the code as a continuous integration. Once server is up & running;
+I will integrate the code with the server. During saturday meeting; 
+we also decided to integrate the design pattern into the prototype we have developed so far.
+
+We are planning to complete the coding part by next wednesday and start working on documentation for the project and working on extra credit video. 
+
+
+
+
+
+
+
+
+
+
+>>>>>>> b17d9a028f96627ec0998928d96b1b882ed1b180
