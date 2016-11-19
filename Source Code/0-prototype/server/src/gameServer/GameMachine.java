@@ -74,10 +74,7 @@ public class GameMachine {
 				
 				String playerName = tokens[0];
 				int score = Integer.parseInt(tokens[1]);
-				int level = Integer.parseInt(tokens[2]);
-				
-				this.playerNameLevel.put(playerName, level);
-				this.playerNameScore.put(playerName, score);
+
 				this.highScore.put(score, playerName);
 			}
 			in.close();
@@ -94,7 +91,6 @@ public class GameMachine {
 		} else {
 			this.playerNameLevel.put(playerName, 0);
 		}
-		
 	}
 
 	public void setLevel(String playerName, int level) {
@@ -110,12 +106,13 @@ public class GameMachine {
 		if (this.playerNameLevel.get(playerName) != null ) {
 			this.ack = "false";
 		} else {
-			this.playerNameLevel.put(playerName, score);
+			this.playerNameScore.put(playerName, score);
+			this.highScore.put(score, playerName);
 		}
 	}
 
 	public int calculateScore(int correctScore, int time) {
-		return 0;
+		return correctScore + time;
 	}
 
 }
