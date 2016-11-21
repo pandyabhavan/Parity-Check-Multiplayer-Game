@@ -1,3 +1,62 @@
+<<<<<<< HEAD
+import greenfoot.*;
+import java.util.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class PlayBoard here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class PlayBoard extends Board
+{   
+    private int randomNum;
+    /**
+     * Act - do whatever the PlayBoard wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    
+    
+    public PlayBoard()
+    {
+       setRandomNum(GameWorld.getGameLevel());
+    }
+    public PlayBoard(List<Bits> bitsList, int level, int randomNumber, int noOfGrid)
+    {
+        
+        int ali = 0;
+        System.out.println("reachedHere" + randomNum );
+        PlayBoardWorld playWorld = new PlayBoardWorld();
+         Greenfoot.setWorld(playWorld);
+        for ( int i = 0 ; i<level ; i++)
+        {
+            for (int j = 0; j<level; j++)
+            {
+                
+                 playWorld.addObject(bitsList.get(ali), (i*noOfGrid)+180, (j*noOfGrid)+80);
+                 ali++;
+                
+            }
+        }
+        
+    }
+    
+    public void act() 
+    {
+        
+    }
+    
+    public void setRandomNum(int level)
+    {
+        randomNum = Greenfoot.getRandomNumber((level*level)-1);
+    }
+    
+    public int getRandomNum()
+    {
+        return randomNum;
+    }
+}
+=======
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
@@ -33,3 +92,4 @@ public class PlayBoard extends Board
         return randomNum;
     }
 }
+>>>>>>> 3e0569f9aa75483472d2d03f9ef07548f2833a9f
