@@ -23,6 +23,8 @@ public class LevelOne extends Board
     
     public void act() 
     {
-        
+        if(Greenfoot.mousePressed(this)){
+            System.out.println("Mouse Clicked Level One");
+        }
     }    
 }

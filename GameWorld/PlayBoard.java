@@ -25,7 +25,7 @@ public class PlayBoard extends Board
         
         int ali = 0;
         System.out.println("reachedHere" + randomNum );
-        PlayBoardWorld playWorld = new PlayBoardWorld();
+        PlayBoardWorld playWorld = new PlayBoardWorld(bitsList,randomNum);
          Greenfoot.setWorld(playWorld);
         for ( int i = 0 ; i<level ; i++)
         {
@@ -34,7 +34,7 @@ public class PlayBoard extends Board
                 
                  playWorld.addObject(bitsList.get(ali), (i*noOfGrid)+180, (j*noOfGrid)+80);
                  ali++;
-                
+           
             }
         }
         
@@ -42,7 +42,9 @@ public class PlayBoard extends Board
     
     public void act() 
     {
-        
+        if(Greenfoot.mousePressed(this)){
+            System.out.println("Mouse Clicked Play Board");
+        }
     }
     
     public void setRandomNum(int level)
