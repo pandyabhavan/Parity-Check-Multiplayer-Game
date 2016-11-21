@@ -43,7 +43,7 @@ public class Timer extends Actor
         String prefix = "T - ";
         if (count >= 0){
            running = false;
-           GameWorld gameWorld = new GameWorld();
+           GameWorld gameWorld = (GameWorld)getWorld();
            gameWorld.setGame();
         }
         int time = count * (int)Math.signum(count);
