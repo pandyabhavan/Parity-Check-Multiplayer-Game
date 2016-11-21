@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #BlueJ class context
 comment0.target=Board
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Board\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
@@ -7,3 +8,12 @@ comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Board\ wants\ to\ do.\ This\ meth
 comment2.params=
 comment2.target=greenfoot.World\ getNewWorld()
 numComments=3
+=======
+#BlueJ class context
+comment0.target=Board
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Board\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Board\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=2
+>>>>>>> 3e0569f9aa75483472d2d03f9ef07548f2833a9f

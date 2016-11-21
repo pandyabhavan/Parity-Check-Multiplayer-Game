@@ -35,3 +35,9 @@ Date          : 10/30/2016
 	We followed respect as a core value by reacting positively to each other feedbacks and suggestions. Even if someone crosses the decided deadline we still maintain harmony in our team and as we have kept buffer time for the final submission, this gives us some more time to finish individual items.
 	Next week our focus will be on developing the code and respectively decide the deadlines to submit individual modules so that we have enough time to test on separate modules and finally on integrated module.
 
+Date          : 11/13/2016
+	
+	This week, assigned work to me was to develop code for game board play page. Currently, it is in progress, I have implemented timer in it and need to add few more functionalities like selecting random bit and change it for the error detection. Me and Aaron also set up the AWS and docker for a sample project. This will help us in building our app in docker and later on to deploy on AWS.
+	In current week’s meeting, we discussed status of the game (individual modules) and the issues we are facing in our sections. Feedback from the other team members helped each other to solve the issues.
+	Following respect as a XP core value helped us in maintaining harmony in team, we were able to take feedbacks and suggestions positively. And helped us in implementing all the requirements Prof. Nguyen has given us.
+	Next week our focus will be on integrating each other modules and perform end to end testing on it.

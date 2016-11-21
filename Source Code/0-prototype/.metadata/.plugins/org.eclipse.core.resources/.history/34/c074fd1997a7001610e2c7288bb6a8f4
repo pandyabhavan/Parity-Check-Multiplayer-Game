@@ -1,0 +1,66 @@
+package api;
+
+import org.json.*;
+import org.restlet.representation.*;
+import org.restlet.ext.json.*;
+import org.restlet.resource.*;
+import gameServer.GameMachine;
+
+
+public class GameServerResource extends ServerResource {
+
+	GameMachine machine = GameMachine.getInstance();
+
+//	@Get
+//	public Representation get() throws JSONException {
+//
+//		String banner = machine.toString();
+//		int count = machine.getCount();
+//		String state = machine.getStateString();
+//
+//		JSONObject json = new JSONObject();
+//		json.put("banner", banner);
+//		json.put("count", count);
+//		json.put("state", state);
+//
+//		return new JsonRepresentation(json);
+//	}
+
+	@Post
+	public Representation post(JsonRepresentation jsonRep) {
+
+		JSONObject json = jsonRep.getJsonObject();
+		
+		String action = json.getString("action");
+		
+		
+		int correctScore = json.getInt("correctScore");
+		int time = json.getInt("time");
+		
+		int score = machine.calculateScore(correctScore, time);
+		
+		System.out.println("action: " + action);
+
+		if (action.equals("registerPlayer")) {
+			String playerName = json.getString("playerName");
+			machine.registerPlayer(playerName);
+		}
+		if (action.equals("setLevel")) {
+			String playerName = json.getString("playerName");
+			int level = json.getInt("level");
+			machine.setLevel(playerName, level);
+		}
+		if (action.equals("setScore")) {
+			String playerName = json.getString("playerName");
+			machine.setScore(playerName, score);
+		}
+		if (action.equals("getHighScore")) {
+			machine.getHighScore();
+		}
+
+		JSONObject response = new JSONObject();
+
+		return new JsonRepresentation(response);
+
+	}
+}
