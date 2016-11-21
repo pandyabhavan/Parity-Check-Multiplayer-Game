@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=GameMachine
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ GameMachine\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=GameMachine()
+comment2.params=state
+comment2.target=void\ setState(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getState()
+numComments=4

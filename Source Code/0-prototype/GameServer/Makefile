@@ -27,7 +27,7 @@ loadtest:
 	java -cp build:dist/restlet.jar:dist/restlet-json.jar:dist/json.jar RunLoadTest 5
 
 docker-build: app
-	docker build -t gameserver .
+	docker build -t aaronlam88/gameserver .
 	docker images
 
 docker-clean:

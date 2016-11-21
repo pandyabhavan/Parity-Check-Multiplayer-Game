@@ -18,7 +18,10 @@ public class GameServerResource extends ServerResource {
 	@Get
 	public Representation get(JsonRepresentation jsonRep) {
 
-		return post(jsonRep);
+		JSONObject json = new JSONObject() ;
+        json.put( "ack", "connected" ) ;
+
+        return new JsonRepresentation ( json ) ;
 	}
 
 	@Post
@@ -40,8 +43,7 @@ public class GameServerResource extends ServerResource {
 			response = new JSONObject();
 			response.put("playerName", playerName);
 			response.put("ack", machine.getAck());
-		}
-		if (action.equals("setLevel")) {
+		} else if (action.equals("setLevel")) {
 			String playerName = json.getString("playerName");
 			String level = json.getString("level");
 			machine.setLevel(playerName, level);
@@ -50,8 +52,7 @@ public class GameServerResource extends ServerResource {
 			response.put("playerName", playerName);
 			response.put("level", machine.getPlayerNameLevel().get(playerName));
 			response.put("ack", machine.getAck());
-		}
-		if (action.equals("setScore")) {
+		} else if (action.equals("setScore")) {
 			String playerName = json.getString("playerName");
 			int correctScore = json.getInt("correctScore");
 			int time = json.getInt("time");
@@ -62,14 +63,16 @@ public class GameServerResource extends ServerResource {
 			response = new JSONObject();
 			response.put("score", machine.getPlayerNameScore().get(playerName));
 			response.put("ack", machine.getAck());
-		}
-		if (action.equals("getHighScore")) {
+		} else if (action.equals("getHighScore")) {
 			NavigableMap<String, String> highScore = machine.getHigScore().descendingMap();
 			response = new JSONObject();
 			for (Map.Entry<String, String> entry : highScore.entrySet()){
 				response.put(entry.getKey(), entry.getValue());
 			}
 			response.put("ack", "true");
+		} else {
+			response = new JSONObject();
+			response.put("ack", "connect-waiting for action");
 		}
 
 		return new JsonRepresentation(response);
