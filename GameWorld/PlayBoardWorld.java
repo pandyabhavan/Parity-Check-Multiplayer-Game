@@ -9,7 +9,8 @@ import java.util.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class PlayBoardWorld extends World
 {
-
+    private int bitX;
+    private int bitY;
     /**
      * Constructor for objects of class PlayBoardWorld.
      * 
@@ -25,5 +26,27 @@ public class PlayBoardWorld extends World
        {
            System.out.println("Oye mil gaya");
         }
+    }
+    
+    public void setBitX(int x)
+    {
+        bitX = x;
+        System.out.println("Oye mil gaya "+x);
+    }
+    
+    public void setBitY(int y)
+    {
+        bitY = y;
+        System.out.println("Oye mil gaya "+y);
+    }
+    
+    public int getBitX()
+    {
+        return bitX;
+    }
+    
+    public int getBitY()
+    {
+        return bitY;
     }
 }

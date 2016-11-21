@@ -10,6 +10,7 @@ import java.util.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class PlayBoard extends Board
 {   
     private int randomNum;
+    
     /**
      * Act - do whatever the PlayBoard wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -33,6 +34,11 @@ public class PlayBoard extends Board
             {
                 
                  playWorld.addObject(bitsList.get(ali), (i*noOfGrid)+180, (j*noOfGrid)+80);
+                 if(ali==randomNum)
+                 {
+                     playWorld.setBitX(((i*noOfGrid)+180));
+                     playWorld.setBitY(((j*noOfGrid)+80));
+                 }
                  ali++;
            
             }
@@ -56,4 +62,5 @@ public class PlayBoard extends Board
     {
         return randomNum;
     }
+    
 }

@@ -21,9 +21,14 @@ public class Black extends Bits
     {
         
         if(Greenfoot.mousePressed(this)){
-            World w = getWorld();
+            PlayBoardWorld w = (PlayBoardWorld) getWorld();
             if (w.getClass().getSimpleName().equalsIgnoreCase("PlayBoardWorld"))
             {
+                if(this.getX()== w.getBitX() && this.getY()== w.getBitY())
+                {
+                     System.out.println("Maa ki aankh");
+                }
+                
             System.out.println("Mouse Clicked Black");
             w.removeObject(this);}
         }

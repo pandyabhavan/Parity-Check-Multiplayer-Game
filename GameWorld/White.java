@@ -21,11 +21,15 @@ public class White extends Bits
     public void act() 
     {
         if(Greenfoot.mousePressed(this)){
-           World w = getWorld();
-           
+            PlayBoardWorld w = (PlayBoardWorld) getWorld();
             if (w.getClass().getSimpleName().equalsIgnoreCase("PlayBoardWorld"))
             {
-            System.out.println("Mouse Clicked Black");
+                if(this.getX()== w.getBitX()&& this.getY()== w.getBitY())
+                {
+                     System.out.println("Maa ki aankh");
+                }
+                
+            System.out.println("Mouse Clicked White");
             w.removeObject(this);}
         }
     }    
