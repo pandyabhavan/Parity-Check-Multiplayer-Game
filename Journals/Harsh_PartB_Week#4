@@ -1,0 +1,7 @@
+Eliminate Waste (Harsh Mehta)
+In the last week we met and integrated our remaining part of code. All the redundancies were removed. Restlet configuration was also developed so that no time is wasted during the deployment of game. Remaining finishing work was also undertaken to make the finished product. We initiated proper testing of individual modules so that no discrepancies is encountered during the presentation. 
+
+
+To eliminate the time taken to make any future changes in the game we implemented object oriented design patterns. This will substantially improve the performance of the game as well as make the future feature additions and enhancements easier.
+ 
+During entire process of development we code titans took all the steps essential to eliminate all types of waste. Design patterns will further enhance the performance of game.
