@@ -1,4 +1,5 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
+import java.util.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class PlayBoard here.
@@ -13,9 +14,30 @@ public class PlayBoard extends Board
      * Act - do whatever the PlayBoard wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
+    
     public PlayBoard()
     {
-       setRandomNum(new GameWorld().getGameLevel());
+       setRandomNum(GameWorld.getGameLevel());
+    }
+    public PlayBoard(List<Bits> bitsList, int level, int randomNumber, int noOfGrid)
+    {
+        
+        int ali = 0;
+        System.out.println("reachedHere" + randomNum );
+        PlayBoardWorld playWorld = new PlayBoardWorld();
+         Greenfoot.setWorld(playWorld);
+        for ( int i = 0 ; i<level ; i++)
+        {
+            for (int j = 0; j<level; j++)
+            {
+                
+                 playWorld.addObject(bitsList.get(ali), (i*noOfGrid)+180, (j*noOfGrid)+80);
+                 ali++;
+                
+            }
+        }
+        
     }
     
     public void act() 

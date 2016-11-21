@@ -9,10 +9,13 @@ import java.util.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class GameWorld extends World
 {
-    private int level = 5;
+    private static int level = 5;
     private int randomNum = 0;
     private int noOfGrid=1;
-    List<Bits> bitsList = null;
+    List<Bits> bitsList = new ArrayList<Bits>();
+        ArrayList<White> whiteList = new ArrayList<White>();        
+        ArrayList<Black> blackList = new ArrayList<Black>();
+    
     /**
      * Constructor for objects of class GameWorld.
      * 
@@ -38,9 +41,7 @@ public class GameWorld extends World
     }
     public void workingOnit()
     {
-        bitsList = new ArrayList<Bits>();
-        ArrayList<White> whiteList = new ArrayList<White>();        
-        ArrayList<Black> blackList = new ArrayList<Black>();
+       
         String[][] bitsArray = null;
         int randomNumber;  
         White w = new White();
@@ -87,10 +88,15 @@ public class GameWorld extends World
                 }
             }
         }
+        System.out.println("Printing jst after setting up");
+        for (int i = 0; i < bitsList.size(); i++)
+        {System.out.println(bitsList.get(i).getClass().getSimpleName() + " At index = " +i);
+            
+        }
         
     }
     
-    public int getGameLevel()
+    public static int getGameLevel()
     {
         return level;
     }
@@ -98,33 +104,32 @@ public class GameWorld extends World
     public void setGame()
     {
         randomNum = new PlayBoard().getRandomNum();
-        Bits bit = bitsList.get(randomNum);
-        String bitClass = bit.getClass().getName();
+        Bits bit;
+        bit = bitsList.get(randomNum);
+        String bitClass = bit.getClass().getSimpleName();
+        System.out.println ( "Random number : " + randomNum + " selected bit = " +bitClass );
         if(bitClass.equalsIgnoreCase("White"))
         {
             bitsList.remove(randomNum);
             bitsList.add(randomNum, new Black());
+            System.out.println ( "Changing white to black");
         }
         else
         {
             bitsList.remove(randomNum);
             bitsList.add(randomNum, new White());
+            System.out.println ( "Changing black to white");
         }
-        //showGrid(bitsList , 5, noOfGrid);
-        int ali = 0;
-        System.out.println("reachedHere" + randomNum );
-        for ( int i = 0 ; i<level ; i++)
-        {
-            for (int j = 0; j<level; j++)
-            {
-                 addObject(bitsList.get(ali), (i*noOfGrid)+180, (j*noOfGrid)+80);
-                 ali++;
-                
-            }
+        System.out.println("Printing jst before changing the world setting up");
+        for (int i = 0; i < bitsList.size(); i++)
+        {System.out.println(bitsList.get(i).getClass().getSimpleName() + " At index = " +i);
+            
         }
+        PlayBoard pb = new PlayBoard(bitsList, 5, randomNum, noOfGrid);
+      
     }
     
-    public void showGrid(List thisList, int level, int gridNo)
+    public void showGrid(List<Bits> bitsList, int level, int gridNo)
     {
         int gridCnt=1;
         

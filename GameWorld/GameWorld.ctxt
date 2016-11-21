@@ -12,6 +12,6 @@ comment4.params=
 comment4.target=int\ getGameLevel()
 comment5.params=
 comment5.target=void\ setGame()
-comment6.params=thisList\ level\ gridNo
+comment6.params=bitsList\ level\ gridNo
 comment6.target=void\ showGrid(java.util.List,\ int,\ int)
 numComments=7
