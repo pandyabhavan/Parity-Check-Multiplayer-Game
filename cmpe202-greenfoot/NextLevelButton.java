@@ -10,24 +10,13 @@ import java.awt.Color;
  */
 public class NextLevelButton extends Button
 {
-    String buttonText = "";
+    String buttonText = "Next Level";
     boolean clicked;
 
-    public NextLevelButton()
+    public NextLevelButton ()
     {
-        this("");
-    }
-
-    public NextLevelButton (String text)
-    {
-        setText(text);
-    }
-
-    public void setText(String text)
-    {
-        buttonText=text;
-        GreenfootImage textImg=new GreenfootImage(" "+text+" ", 24, Color.black, new Color(0, 0, 0, 0));
-        GreenfootImage image=new GreenfootImage(textImg.getWidth()+8, textImg.getHeight()+8);
+        GreenfootImage textImg = new GreenfootImage(" "+buttonText+" ", 24, Color.black, new Color(0, 0, 0, 0));
+        GreenfootImage image = new GreenfootImage(textImg.getWidth()+8, textImg.getHeight()+8);
         image.setColor(Color.darkGray);
         image.fill();
         image.setColor(Color.lightGray);
@@ -46,24 +35,14 @@ public class NextLevelButton extends Button
     {
         if(Greenfoot.mouseClicked(this)) 
         {
-            String text = "CLICKED";
-            buttonText=text;
-            GreenfootImage textImg=new GreenfootImage(" "+text+" ", 24, Color.black, new Color(0, 0, 0, 0));
-            GreenfootImage image=new GreenfootImage(textImg.getWidth()+8, textImg.getHeight()+8);
-            image.setColor(Color.darkGray);
-            image.fill();
-            image.setColor(Color.lightGray);
-            image.fillRect(3, 3, image.getWidth()-6, image.getHeight()-6);
-            image.setColor(Color.black);
-            image.drawImage(textImg, (image.getWidth()-textImg.getWidth())/2, (image.getHeight()-textImg.getHeight())/2);
-            setImage(image);
+
         }
     }
 
     public boolean gotClicked()
     {
         boolean wasClicked=clicked;
-        clicked=false;
+        clicked = false;
         return wasClicked;
     }
 

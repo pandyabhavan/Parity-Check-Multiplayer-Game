@@ -30,7 +30,7 @@ public class TimerActor extends Actor {
         lastTime = 0;
     }
     
-    public void act() {
+    public void timerStart() {
         long time = System.currentTimeMillis();
         if(lastTime != 0) {
             long diff = time - lastTime;

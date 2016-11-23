@@ -37,5 +37,11 @@ public class GameWorld extends World
         for (j = 80; j < size; j+= 52) {
             addObject (new BlankCard(), i, j);
         }
+        j += 10;
+        addObject(new StartButton(), (size-20)/2, j);
+        j += 50;
+        addObject(new SubmitButton(), (size-20)/2, j);
+        j += 50;
+        addObject(new NextLevelButton(), (size-20)/2, j);
     }
 }

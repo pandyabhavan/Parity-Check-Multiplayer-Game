@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BlankCard extends Card
 {
     private int size = super.size;
-    private String color = "Blue";
+    private String color = "";
     private boolean isFlip = false;
     private GreenfootImage image = new  GreenfootImage(size, size);
 
@@ -25,11 +25,22 @@ public class BlankCard extends Card
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
-    {
-        if (color == "Red") {
-            image.setColor(java.awt.Color.RED);
+    {        
+        if (Greenfoot.mouseClicked(this))
+        {
+            if(this.color == "") {
+                image.setColor(java.awt.Color.RED);
+                this.color = "Red";
+            } else if (this.color == "Red") {
+                image.setColor(java.awt.Color.BLUE);
+                this.color = "Blue";
+            } else {
+                image.setColor(java.awt.Color.RED);
+                this.color = "Red";
+            }
             image.fill();
             setImage(image);
         }
+
     }   
 }

@@ -7,12 +7,12 @@ import java.awt.Color;
  * @author Aaron Lam
  * @version 1.0 - updated 11-21-2016
  */
-public class SubmitButton extends Button
+public class StartButton extends Button
 {
-    String buttonText = "Submit";
+    String buttonText = "Start";
     boolean clicked;
 
-    public SubmitButton ()
+    public StartButton ()
     {
         GreenfootImage textImg=new GreenfootImage(" "+buttonText+" ", 24, Color.black, new Color(0, 0, 0, 0));
         GreenfootImage image=new GreenfootImage(textImg.getWidth()+8, textImg.getHeight()+8);
