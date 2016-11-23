@@ -9,7 +9,8 @@ import java.util.*;
  */
 public class GameWorld extends World
 {
-    private int size = 300;
+    private int size = 500;
+    
     /**
      * Constructor for objects of class MyWorld.
      * 

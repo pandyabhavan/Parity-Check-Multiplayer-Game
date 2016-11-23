@@ -12,35 +12,41 @@ public class TimerActor extends Actor {
     private boolean running = false;
     private int millisElapsed = 0;
     private long lastTime = 0;
-    
+
+    public void setRunning (boolean running)
+    {
+        this.running = running;
+    }
+
     public int getTime() {
         return millisElapsed;
     }
-    
+
     public TimerActor() {
         updateImage();
     }
-    
+
     public void start() {
         millisElapsed = 0;
         lastTime = 0;
     }
-    
+
     public void gamePaused() {
         lastTime = 0;
     }
-    
-    public void timerStart() {
-        long time = System.currentTimeMillis();
-        if(lastTime != 0) {
-            long diff = time - lastTime;
-            millisElapsed += diff;
+
+    public void act() {
+        if (running) {
+            long time = System.currentTimeMillis();
+            if(lastTime != 0) {
+                long diff = time - lastTime;
+                millisElapsed += diff;
+            }
+            lastTime = time;
+            updateImage();
         }
-        lastTime = time;
-        
-        updateImage();
     }
-    
+
     public void updateImage() {
         // Calculate minutes & seconds elapsed
         int millis = millisElapsed % 1000;

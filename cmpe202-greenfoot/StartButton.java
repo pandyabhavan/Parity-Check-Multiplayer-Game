@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.Color;
+import java.util.*;
 
 /**
  * Write a description of class SubmitButton here.
@@ -10,7 +11,7 @@ import java.awt.Color;
 public class StartButton extends Button
 {
     String buttonText = "Start";
-    boolean clicked;
+    boolean clicked = false;
 
     public StartButton ()
     {
@@ -32,19 +33,28 @@ public class StartButton extends Button
 
     public void act()
     {
-        if(Greenfoot.mouseClicked(this)) 
+        if(Greenfoot.mouseClicked(this) && !clicked) 
         {
-            String text = "CLICKED";
-            buttonText=text;
-            GreenfootImage textImg=new GreenfootImage(" "+text+" ", 24, Color.black, new Color(0, 0, 0, 0));
-            GreenfootImage image=new GreenfootImage(textImg.getWidth()+8, textImg.getHeight()+8);
-            image.setColor(Color.darkGray);
-            image.fill();
-            image.setColor(Color.lightGray);
-            image.fillRect(3, 3, image.getWidth()-6, image.getHeight()-6);
-            image.setColor(Color.black);
-            image.drawImage(textImg, (image.getWidth()-textImg.getWidth())/2, (image.getHeight()-textImg.getHeight())/2);
-            setImage(image);
+            clicked = true;
+            
+            List <TimerActor> timer = this.getWorld().getObjects(TimerActor.class);
+            timer.get(0).setRunning(true);
+            timer = null;
+            
+            Random rand = new Random();
+            if (rand.nextBoolean()) 
+            {
+                List <BlueCard> cardList = this.getWorld().getObjects(BlueCard.class);
+                int i = rand.nextInt(cardList.size());
+                cardList.get(i).flip();
+            }
+            else
+            {
+                List <RedCard> cardList = this.getWorld().getObjects(RedCard.class);
+                int i = rand.nextInt(cardList.size());
+                cardList.get(i).flip();
+            }
+                
         }
     }
 
