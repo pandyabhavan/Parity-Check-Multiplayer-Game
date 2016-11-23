@@ -25,19 +25,23 @@ public class PlayBoard extends Board
     {
         
         int ali = 0;
-        System.out.println("reachedHere" + randomNum );
-        PlayBoardWorld playWorld = new PlayBoardWorld(bitsList,randomNum);
+        System.out.println("reachedHere" + randomNumber );
+        PlayBoardWorld playWorld = new PlayBoardWorld(bitsList,randomNumber);
          Greenfoot.setWorld(playWorld);
         for ( int i = 0 ; i<level ; i++)
         {
             for (int j = 0; j<level; j++)
             {
-                
-                 playWorld.addObject(bitsList.get(ali), (i*noOfGrid)+180, (j*noOfGrid)+80);
-                 if(ali==randomNum)
+                 int x = (i*noOfGrid)+180;
+                 int y = (j*noOfGrid)+80;
+                 playWorld.addObject(bitsList.get(ali), x, y);
+                 if(ali==randomNumber)
                  {
-                     playWorld.setBitX(((i*noOfGrid)+180));
-                     playWorld.setBitY(((j*noOfGrid)+80));
+                     
+                     playWorld.setBitX(x);
+                     System.out.println("i =" +x);
+                     playWorld.setBitY(y);
+                     System.out.print(" and j =" +y);
                  }
                  ali++;
            

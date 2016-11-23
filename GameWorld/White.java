@@ -26,7 +26,9 @@ public class White extends Bits
             {
                 if(this.getX()== w.getBitX()&& this.getY()== w.getBitY())
                 {
-                     System.out.println("Maa ki aankh");
+                      w.removeObject(this);
+                     ScoreWorld scoreWorld = new ScoreWorld();
+                     Greenfoot.setWorld(scoreWorld);
                 }
                 
             System.out.println("Mouse Clicked White");
