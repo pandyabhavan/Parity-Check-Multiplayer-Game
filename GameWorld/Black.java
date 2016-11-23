@@ -19,6 +19,20 @@ public class Black extends Bits
     }
     public void act() 
     {
-        // Add your action code here.
+        
+        if(Greenfoot.mousePressed(this)){
+            PlayBoardWorld w = (PlayBoardWorld) getWorld();
+            if (w.getClass().getSimpleName().equalsIgnoreCase("PlayBoardWorld"))
+            {
+                if(this.getX()== w.getBitX() && this.getY()== w.getBitY())
+                {
+                     w.removeObject(this);
+                     ScoreWorld scoreWorld = new ScoreWorld();
+                     Greenfoot.setWorld(scoreWorld);
+                }
+                
+            
+            w.removeObject(this);}
+        }
     }    
 }

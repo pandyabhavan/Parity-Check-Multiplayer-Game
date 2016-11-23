@@ -82,3 +82,13 @@ Based on the feedbacks improved the same and also implemented the Timer after di
 Discussed with all to commit the code on the GITHUB and add individual reviews / feedbacks to improvise the design to further work on the same.
 Also discussed with all to share their feedbacks on further implementations of variables and calls between different modules for effective integration. So the respective teammates shared their codes with each other to manipulate their classed according to the call from the other modules.
 Feedback will be playing an effective role while deciding about the next meetings for integrating everything together. 
+
+--------------------------
+
+Date : 11/20/2016
+
+This weeks task was to integrate the modules and test the functionality however based on the feedback provided by all we needed some changes in the individual modules as per the requirements and the game world logic. We also initiated the inline testing of the game so that the modules are thoroughly tested even before the integration and after the same.
+As per the discussion with all we also decided to engage few students in our game and collect the feedbacks from them for further improvement in the game.
+We also added one more thing in our to do list as one of the outcome of this week's meeting and would be writing testcases for the game.
+As feedback from all also taken into consideration the fact that we need to complete the game within a week for adhoc testing and any improvement if required later. Looking forward to next meeting to be able to complete the integration of the game.
+

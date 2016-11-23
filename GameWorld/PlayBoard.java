@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-import greenfoot.*;
+import greenfoot.*; 
 import java.util.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
@@ -11,6 +10,7 @@ import java.util.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class PlayBoard extends Board
 {   
     private int randomNum;
+    
     /**
      * Act - do whatever the PlayBoard wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -25,17 +25,26 @@ public class PlayBoard extends Board
     {
         
         int ali = 0;
-        System.out.println("reachedHere" + randomNum );
-        PlayBoardWorld playWorld = new PlayBoardWorld();
+        System.out.println("reachedHere" + randomNumber );
+        PlayBoardWorld playWorld = new PlayBoardWorld(bitsList,randomNumber);
          Greenfoot.setWorld(playWorld);
         for ( int i = 0 ; i<level ; i++)
         {
             for (int j = 0; j<level; j++)
             {
-                
-                 playWorld.addObject(bitsList.get(ali), (i*noOfGrid)+180, (j*noOfGrid)+80);
+                 int x = (i*noOfGrid)+180;
+                 int y = (j*noOfGrid)+80;
+                 playWorld.addObject(bitsList.get(ali), x, y);
+                 if(ali==randomNumber)
+                 {
+                     
+                     playWorld.setBitX(x);
+                     System.out.println("i =" +x);
+                     playWorld.setBitY(y);
+                     System.out.print(" and j =" +y);
+                 }
                  ali++;
-                
+           
             }
         }
         
@@ -43,7 +52,9 @@ public class PlayBoard extends Board
     
     public void act() 
     {
-        
+        if(Greenfoot.mousePressed(this)){
+            System.out.println("Mouse Clicked Play Board");
+        }
     }
     
     public void setRandomNum(int level)
@@ -55,41 +66,5 @@ public class PlayBoard extends Board
     {
         return randomNum;
     }
+    
 }
-=======
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
-/**
- * Write a description of class PlayBoard here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class PlayBoard extends Board
-{   
-    private int randomNum;
-    /**
-     * Act - do whatever the PlayBoard wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public PlayBoard()
-    {
-       setRandomNum(new GameWorld().getGameLevel());
-    }
-    
-    public void act() 
-    {
-        
-    }
-    
-    public void setRandomNum(int level)
-    {
-        randomNum = Greenfoot.getRandomNumber((level*level)-1);
-    }
-    
-    public int getRandomNum()
-    {
-        return randomNum;
-    }
-}
->>>>>>> 3e0569f9aa75483472d2d03f9ef07548f2833a9f
