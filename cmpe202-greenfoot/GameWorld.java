@@ -9,7 +9,22 @@ import java.util.*;
  */
 public class GameWorld extends World
 {
-    private int size = 500;
+    public int size = 500;
+    private Card selectedCard;
+    
+    public int getSize() {
+        return this.size;
+    }
+    public void setSize(int size) {
+        this.size = size;
+    }
+    
+    public Card getSelectedCard() {
+        return selectedCard;
+    }
+    public void setSelectedCard(Card card) {
+        selectedCard = card;
+    }
     
     /**
      * Constructor for objects of class MyWorld.
@@ -26,11 +41,12 @@ public class GameWorld extends World
         int i= 0, j=0;
         for (i = 40; i < size - 52; i += 52) {
             for (j = 80; j < size - 52; j += 52) {
-                if (rand.nextBoolean()) {
-                    addObject (new BlueCard (), i, j);
-                } else {
-                    addObject (new RedCard (), i, j);
-                }
+                // if (rand.nextBoolean()) {
+                    // addObject (new BlueCard (), i, j);
+                // } else {
+                    // addObject (new RedCard (), i, j);
+                // }
+                addObject (new Card(), i, j);
             }
             addObject (new BlankCard(), i, j);
         }

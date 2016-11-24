@@ -38,25 +38,19 @@ public class StartButton extends Button
         if(Greenfoot.mouseClicked(this) && !clicked) 
         {
             clicked = true;
-            
+
             List <TimerActor> timer = this.getWorld().getObjects(TimerActor.class);
             timer.get(0).setRunning(true);
             timer = null;
-            
+
+            List<Card> cardList = this.getWorld().getObjects(Card.class);
+
             Random rand = new Random();
-            if (rand.nextBoolean()) 
-            {
-                List <BlueCard> cardList = this.getWorld().getObjects(BlueCard.class);
-                int i = rand.nextInt(cardList.size());
-                cardList.get(i).flip();
-            }
-            else
-            {
-                List <RedCard> cardList = this.getWorld().getObjects(RedCard.class);
-                int i = rand.nextInt(cardList.size());
-                cardList.get(i).flip();
-            }
-                
+
+            int index = rand.nextInt(cardList.size());
+
+            cardList.get(index).flip();
+
         }
     }
 

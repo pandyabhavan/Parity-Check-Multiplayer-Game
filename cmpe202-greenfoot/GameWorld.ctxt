@@ -2,6 +2,14 @@
 comment0.target=GameWorld
 comment0.text=\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\n\ \n\ @author\ Aaron\ Lam\n\ @version\ 1.0\ -\ updated\ 11-21-2016\n
 comment1.params=
-comment1.target=GameWorld()
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\n\ \n
-numComments=2
+comment1.target=int\ getSize()
+comment2.params=size
+comment2.target=void\ setSize(int)
+comment3.params=
+comment3.target=Card\ getSelectedCard()
+comment4.params=card
+comment4.target=void\ setSelectedCard(Card)
+comment5.params=
+comment5.target=GameWorld()
+comment5.text=\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\n\ \n
+numComments=6
