@@ -3,7 +3,9 @@ import java.awt.Color;
 import java.util.*;
 
 /**
- * Write a description of class SubmitButton here.
+ * Write a description of class StartButton here.
+ *     When the player is ready to start the game
+ *     He/She will press the Start Button to start playing.
  * 
  * @author Aaron Lam
  * @version 1.0 - updated 11-21-2016

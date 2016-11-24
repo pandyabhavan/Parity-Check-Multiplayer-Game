@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=StartButton
-comment0.text=\n\ Write\ a\ description\ of\ class\ SubmitButton\ here.\n\ \n\ @author\ Aaron\ Lam\n\ @version\ 1.0\ -\ updated\ 11-21-2016\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ StartButton\ here.\n\ \ \ \ \ When\ the\ player\ is\ ready\ to\ start\ the\ game\n\ \ \ \ \ He/She\ will\ press\ the\ Start\ Button\ to\ start\ playing.\n\ \n\ @author\ Aaron\ Lam\n\ @version\ 1.0\ -\ updated\ 11-21-2016\n
 comment1.params=
 comment1.target=StartButton()
 comment2.params=

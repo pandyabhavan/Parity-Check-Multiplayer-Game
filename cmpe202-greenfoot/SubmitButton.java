@@ -3,7 +3,7 @@ import java.awt.Color;
 
 /**
  * Write a description of class SubmitButton here.
- * 
+ *     SubmitButton will submit the result to the current game to server
  * @author Aaron Lam
  * @version 1.0 - updated 11-21-2016
  */

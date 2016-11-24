@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=SubmitButton
-comment0.text=\n\ Write\ a\ description\ of\ class\ SubmitButton\ here.\n\ \n\ @author\ Aaron\ Lam\n\ @version\ 1.0\ -\ updated\ 11-21-2016\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ SubmitButton\ here.\n\ \ \ \ \ SubmitButton\ will\ submit\ the\ result\ to\ the\ current\ game\ to\ server\n\ @author\ Aaron\ Lam\n\ @version\ 1.0\ -\ updated\ 11-21-2016\n
 comment1.params=
 comment1.target=SubmitButton()
 comment2.params=
