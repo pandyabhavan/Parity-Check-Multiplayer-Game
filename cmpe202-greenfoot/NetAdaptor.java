@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Aaron Lam
  * @version 1.0 - update 11-23-2016
  */
-public class Communicator extends Actor
+public class NetAdaptor extends Actor
 {
     /**
      * Act - do whatever the Communicator wants to do. This method is called whenever

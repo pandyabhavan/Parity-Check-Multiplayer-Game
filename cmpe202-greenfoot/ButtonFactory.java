@@ -8,11 +8,7 @@ import java.awt.Color;
  * @version 1.0 - updated 11-21-2016
  */
 public abstract class ButtonFactory extends Actor
-{
-    // ButtonFactory
-    String buttonText;
-    boolean clicked;
-    
+{   
     public ButtonFactory (String buttonText) {
         GreenfootImage textImg = new GreenfootImage(" "+buttonText+" ", 24, Color.black, new Color(0, 0, 0, 0));
         GreenfootImage image = new GreenfootImage(textImg.getWidth()+8, textImg.getHeight()+8);
@@ -24,15 +20,5 @@ public abstract class ButtonFactory extends Actor
         image.drawImage(textImg, (image.getWidth()-textImg.getWidth())/2, (image.getHeight()-textImg.getHeight())/2);
         setImage(image);
     }
-    public boolean gotClicked()
-    {
-        boolean wasClicked=clicked;
-        clicked = false;
-        return wasClicked;
-    }
-
-    public String getText()
-    {
-        return buttonText;
-    }
+    
 }

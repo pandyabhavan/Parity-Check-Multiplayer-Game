@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.*;
+import java.awt.Color;
 
 /**
  * Write a description of class Card here.
@@ -80,15 +81,23 @@ public class Card extends Actor
     public void act() 
     {
         if(Greenfoot.mouseClicked(this)) {
-            List<Card> cardList = this.getWorld().getObjects(Card.class);
-            for(Card card : cardList) {
-                card.setSelected(false);
-                image.setColor(java.awt.Color.GREEN);
-                image.drawRect(0, 0, size-1, size-1);
-                image.setTransparency(180);
-                setImage(image);
-            }
-            this.selected = true;
+            select();
         }
     }   
+
+    public void select() {
+        Observer observer = Observer.getObserver();
+        observer.cardSelected(this);
+        Color color = image.getColor();
+        image.setColor(java.awt.Color.BLACK);
+        image.fill();
+
+        image.setTransparency(200);
+
+        image.setColor(color);
+        image.fillRect(3, 3, size-6, size-6);
+        setImage(image);
+
+        this.selected = true;
+    }
 }

@@ -18,4 +18,6 @@ comment7.target=boolean\ isSelected()
 comment8.params=
 comment8.target=void\ act()
 comment8.text=\r\n\ Act\ -\ do\ whatever\ the\ BlackCard\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=9
+comment9.params=
+comment9.target=void\ select()
+numComments=10

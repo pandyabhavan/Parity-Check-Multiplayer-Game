@@ -25,7 +25,7 @@ public class SubmitButton extends ButtonFactory
 
     public void act()
     {
-        if(Greenfoot.mouseClicked(this)) 
+        if(Greenfoot.mouseClicked(this) && !clicked) 
         {
             clicked = true;
             boolean correct = false;
