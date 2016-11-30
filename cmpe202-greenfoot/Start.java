@@ -17,11 +17,10 @@ public class Start extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
+        int j = 20;
+        addObject(new Level1(), (600-20)/2, j+=50);
+        addObject(new Level2(), (600-20)/2, j+=50);
+        addObject(new Level3(), (600-20)/2, j+=50);
         
-    }
-    
-    public void setWorld(int size) {
-        GameWorld gameWorld = new GameWorld(size);
-        Greenfoot.setWorld(gameWorld);
     }
 }

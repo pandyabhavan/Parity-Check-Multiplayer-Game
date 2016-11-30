@@ -27,7 +27,13 @@ public class NextLevelButton extends ButtonFactory
     {
         if(Greenfoot.mouseClicked(this)) 
         {
-
+            int size = ((GameWorld) this.getWorld()).size;
+            if (size == 600) {
+                System.out.println("END");
+            } else {
+                GameWorld gameWorld = new GameWorld(size + 100);
+                Greenfoot.setWorld(gameWorld); 
+            }
         }
     }
 
