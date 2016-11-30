@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Player
-comment0.text=\n\ Write\ a\ description\ of\ class\ Player\ here.\n\ \ \ \ \ Player\ is\ an\ observer\n\ \ \ \ \ Player\ will\ observe\ all\ the\ action\ happen\ on\ the\ GameWorld\n\ \ \ \ \ \ \ \ \ and\ call\ or\ act\ accordingly\n\ \n\ @author\ Aaron\ Lam\n\ @version\ 1.0\ -\ updated\ 11-21-2016\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Player\ here.\r\n\ \ \ \ \ Player\ is\ an\ observer\r\n\ \ \ \ \ Player\ will\ observe\ all\ the\ action\ happen\ on\ the\ GameWorld\r\n\ \ \ \ \ \ \ \ \ and\ call\ or\ act\ accordingly\r\n\ \r\n\ @author\ Aaron\ Lam\r\n\ @version\ 1.0\ -\ updated\ 11-21-2016\r\n
 comment1.params=
 comment1.target=java.lang.String\ getUsername()
 comment2.params=username
@@ -19,5 +19,5 @@ comment8.params=level
 comment8.target=void\ setLevel(int)
 comment9.params=
 comment9.target=void\ act()
-comment9.text=\n\ Act\ -\ do\ whatever\ the\ Player\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment9.text=\r\n\ Act\ -\ do\ whatever\ the\ Player\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 numComments=10

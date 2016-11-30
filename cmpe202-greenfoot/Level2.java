@@ -6,13 +6,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Level2 extends Button
+public class Level2 extends ButtonFactory
 {
-    String buttonText = "Level 2";
-    boolean clicked;
-
-    public Level2 ()
-    {
+    public Level2(){
         super("Level 2");
     }
     /**
@@ -21,6 +17,9 @@ public class Level2 extends Button
      */
     public void act() 
     {
-        // Add your action code here.
+        if(Greenfoot.mouseClicked(this)) {
+            GameWorld gameWorld = new GameWorld(400);
+            Greenfoot.setWorld(gameWorld);
+        }
     }    
 }

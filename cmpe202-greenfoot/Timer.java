@@ -8,7 +8,7 @@ import greenfoot.*;
  * @version: 2013/4/27
  */
 
-public class TimerActor extends Actor {
+public class Timer extends Actor {
     private boolean running = false;
     private int millisElapsed = 0;
     private long lastTime = 0;
@@ -22,7 +22,7 @@ public class TimerActor extends Actor {
         return millisElapsed;
     }
 
-    public TimerActor() {
+    public Timer() {
         updateImage();
     }
 

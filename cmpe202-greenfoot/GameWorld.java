@@ -35,7 +35,35 @@ public class GameWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 800, 1);
         
-        addObject(new TimerActor(), 520, 20);
+        addObject(new Timer(), 520, 20);
+        
+        Random rand = new Random();
+        int i= 0, j=0;
+        for (i = 40; i < size - 52; i += 52) {
+            for (j = 80; j < size - 52; j += 52) {
+                addObject (new Card(), i, j);
+            }
+            addObject (new BlankCard(), i, j);
+        }
+        
+        for (j = 80; j < size; j+= 52) {
+            addObject (new BlankCard(), i, j);
+        }
+        j += 10;
+        addObject(new StartButton(), (size-20)/2, j);
+        j += 50;
+        addObject(new SubmitButton(), (size-20)/2, j);
+        j += 50;
+        addObject(new NextLevelButton(), (size-20)/2, j);
+    }
+    
+    public GameWorld(int size)
+    {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        super(600, 800, 1);
+        this.size = size;
+        
+        addObject(new Timer(), 520, 20);
         
         Random rand = new Random();
         int i= 0, j=0;

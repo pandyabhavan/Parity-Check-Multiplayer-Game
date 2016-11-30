@@ -1,12 +1,12 @@
 #BlueJ class context
-comment0.target=TimerActor
-comment0.text=\n\ Write\ a\ description\ of\ class\ TimmerActor\ here.\n\ \ \ \ \ Count\ in\ game\ time\n\ \ \ \ \ Adapted\ for\ project\ from\ http\://www.greenfoot.org/scenarios/8157\n\ @author\:\ Duta\n\ @version\:\ 2013/4/27\n
+comment0.target=Timer
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ TimmerActor\ here.\r\n\ \ \ \ \ Count\ in\ game\ time\r\n\ \ \ \ \ Adapted\ for\ project\ from\ http\://www.greenfoot.org/scenarios/8157\r\n\ @author\:\ Duta\r\n\ @version\:\ 2013/4/27\r\n
 comment1.params=running
 comment1.target=void\ setRunning(boolean)
 comment2.params=
 comment2.target=int\ getTime()
 comment3.params=
-comment3.target=TimerActor()
+comment3.target=Timer()
 comment4.params=
 comment4.target=void\ start()
 comment5.params=

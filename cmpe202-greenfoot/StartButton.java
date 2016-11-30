@@ -10,22 +10,14 @@ import java.util.*;
  * @author Aaron Lam
  * @version 1.0 - updated 11-21-2016
  */
-public class StartButton extends Button
+public class StartButton extends ButtonFactory
 {
     String buttonText = "Start";
     boolean clicked = false;
 
     public StartButton ()
     {
-        GreenfootImage textImg=new GreenfootImage(" "+buttonText+" ", 24, Color.black, new Color(0, 0, 0, 0));
-        GreenfootImage image=new GreenfootImage(textImg.getWidth()+8, textImg.getHeight()+8);
-        image.setColor(Color.darkGray);
-        image.fill();
-        image.setColor(Color.lightGray);
-        image.fillRect(3, 3, image.getWidth()-6, image.getHeight()-6);
-        image.setColor(Color.black);
-        image.drawImage(textImg, (image.getWidth()-textImg.getWidth())/2, (image.getHeight()-textImg.getHeight())/2);
-        setImage(image);
+        super("Start");
     }
 
     /**
@@ -38,18 +30,24 @@ public class StartButton extends Button
         if(Greenfoot.mouseClicked(this) && !clicked) 
         {
             clicked = true;
-
-            List <TimerActor> timer = this.getWorld().getObjects(TimerActor.class);
+            Random rand = new Random();
+            List <Timer> timer = this.getWorld().getObjects(Timer.class);
             timer.get(0).setRunning(true);
             timer = null;
 
             List<Card> cardList = this.getWorld().getObjects(Card.class);
-
-            Random rand = new Random();
-
+            for(Card card : cardList) {
+                card.shuffle();
+            }
+            
             int index = rand.nextInt(cardList.size());
-
             cardList.get(index).flip();
+            
+            Greenfoot.delay(50);
+            
+            for(Card card : cardList) {
+                card.unShuffle();
+            }
 
         }
     }

@@ -6,9 +6,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Aaron Lam
  * @version 1.0 - updated 11-21-2016
  */
-public class BlankCard extends Card
+public class BlankCard extends Actor
 {
-    private int size = super.size;
+    private int size = 50;
     private String color = "";
     private boolean isFlip = false;
     private GreenfootImage image = new  GreenfootImage(size, size);

@@ -15,6 +15,34 @@ public class Card extends Actor
     private boolean selected = false;
     private GreenfootImage image = new  GreenfootImage(size, size);
 
+    public void shuffle () {
+        image.setColor(java.awt.Color.WHITE);
+        image.fill();
+        setImage(image);
+    }
+
+    public void unShuffle() {
+        if (isFlip) {
+            if (color == "RED") {
+                image.setColor(java.awt.Color.BLUE);
+                color = "BLUE";
+            } else {
+                image.setColor(java.awt.Color.RED);
+                color = "RED";
+            }
+            image.fill();
+            setImage(image);
+        }
+
+        if (color == "RED") {
+            image.setColor(java.awt.Color.RED);
+        } else {
+            image.setColor(java.awt.Color.BLUE);
+        }
+        image.fill();
+        setImage(image);
+    }
+
     public Card () {
         Random rand = new Random();
         if (rand.nextBoolean()) {
@@ -30,24 +58,17 @@ public class Card extends Actor
 
     public void flip() {
         isFlip = true;
-        if (color == "RED") {
-            image.setColor(java.awt.Color.BLUE);
-            color = "BLUE";
-        } else {
-            image.setColor(java.awt.Color.RED);
-            color = "RED";
-        }
-        image.fill();
-        setImage(image);
+
     }
 
     public boolean isFlip() {
         return isFlip;
     }
-    
+
     public void setSelected(boolean selected) {
         this.selected = selected;
     }
+
     public boolean isSelected() {
         return selected;
     }
@@ -62,6 +83,10 @@ public class Card extends Actor
             List<Card> cardList = this.getWorld().getObjects(Card.class);
             for(Card card : cardList) {
                 card.setSelected(false);
+                image.setColor(java.awt.Color.GREEN);
+                image.drawRect(0, 0, size-1, size-1);
+                image.setTransparency(180);
+                setImage(image);
             }
             this.selected = true;
         }
