@@ -34,8 +34,10 @@ public class SubmitButton extends ButtonFactory
             for(Card card : cardList) {
                 if (card.isFlip() && card.isSelected()) {
                     // correct
-                    correct = true;
-                    
+                    correct = true;                    
+                }
+                else if (card.isFlip()) {
+                    card.changeColor(java.awt.Color.YELLOW);
                 }
             }
             

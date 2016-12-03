@@ -6,12 +6,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Observer extends Actor
+public class Observer
 {
     private static Observer observer;
+    private SingletonPlayer theSingletonPlayer;
 
     private Observer() {
-
+        theSingletonPlayer = SingletonPlayer.getInstance();
     }
 
     public static Observer getObserver() {
@@ -21,8 +22,8 @@ public class Observer extends Actor
         return observer;
     }
 
+    // make sure that player can only select 1 card
     Card currentSelected = null;
-
     public void cardSelected (Card card) {
         if (currentSelected == null) {
             currentSelected = card;
@@ -32,4 +33,9 @@ public class Observer extends Actor
             currentSelected = card;
         }
     }  
+    
+    // notify player object
+    public void submitted(boolean correct, int time) {
+        theSingletonPlayer.submitted(correct, time);
+    }
 }

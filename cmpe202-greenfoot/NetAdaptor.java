@@ -10,10 +10,10 @@ import org.restlet.resource.ClientResource;
  * @author Aaron Lam
  * @version 1.0 - update 11-23-2016
  */
-public class NetAdaptor extends Actor
+public class NetAdaptor
 {
     private static NetAdaptor instance;
-    private static String url = "docker url";
+    private static String url = "http://gameserver-ed4741ba-1.ba56d9f4.cont.dockerapp.io:32773/gameserver";
     private ClientResource client;
 
     private NetAdaptor() {

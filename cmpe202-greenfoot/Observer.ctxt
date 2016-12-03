@@ -7,4 +7,6 @@ comment2.params=
 comment2.target=Observer\ getObserver()
 comment3.params=card
 comment3.target=void\ cardSelected(Card)
-numComments=4
+comment4.params=correct\ time
+comment4.target=void\ submitted(boolean,\ int)
+numComments=5

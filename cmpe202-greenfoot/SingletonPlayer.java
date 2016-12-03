@@ -6,11 +6,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class SingletonPlayer extends Actor
+public class SingletonPlayer
 {
     private static SingletonPlayer instance;
     
-    private SingletonPlayer() {        
+    private SingletonPlayer() {
+        
     }
     
     public static SingletonPlayer getInstance() {
@@ -20,12 +21,11 @@ public class SingletonPlayer extends Actor
         return instance;
     }
     
-    /**
-     * Act - do whatever the SingletonPlayer wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
-    {
-        // Add your action code here.
-    }    
+    public void submitted (boolean correct, int time) {
+        if (correct) {
+            System.out.println("CORRECT");
+        } else {
+            System.out.println("!CORRECT");
+        }
+    }
 }
