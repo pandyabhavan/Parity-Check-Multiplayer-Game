@@ -6,11 +6,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Level1 extends ButtonFactory
+public class Level1Button extends Button
 {
-    public Level1(){
+    public Level1Button(){
         super("Level 1");
     }
+    
     /**
      * Act - do whatever the Level1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

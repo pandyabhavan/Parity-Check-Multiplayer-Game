@@ -15,7 +15,7 @@ public class Observer
         theSingletonPlayer = SingletonPlayer.getInstance();
     }
 
-    public static Observer getObserver() {
+    public static Observer getInstance() {
         if (observer == null) {
             observer = new Observer();
         }

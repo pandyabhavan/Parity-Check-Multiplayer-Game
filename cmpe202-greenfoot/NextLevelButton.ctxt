@@ -1,11 +1,11 @@
 #BlueJ class context
 comment0.target=NextLevelButton
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ NextButton\ here.\r\n\ \ \ \ \ NextLevelButton\ will\ move\ Player\ to\ the\ next\ level\r\n\ \ \ \ \ \r\n\ @author\ Aaron\ Lam\r\n\ @version\ 1.0\ -\ updated\ 11-21-2016\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ NextButton\ here.\n\ \ \ \ \ NextLevelButton\ will\ move\ Player\ to\ the\ next\ level\n\ \ \ \ \ \n\ @author\ Aaron\ Lam\n\ @version\ 1.0\ -\ updated\ 11-21-2016\n
 comment1.params=
 comment1.target=NextLevelButton()
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ NextButton\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.text=\n\ Act\ -\ do\ whatever\ the\ NextButton\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 comment3.params=
 comment3.target=boolean\ gotClicked()
 comment4.params=

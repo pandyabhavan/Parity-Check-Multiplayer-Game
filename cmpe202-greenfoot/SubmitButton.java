@@ -8,7 +8,7 @@ import java.util.*;
  * @author Aaron Lam
  * @version 1.0 - updated 11-21-2016
  */
-public class SubmitButton extends ButtonFactory
+public class SubmitButton extends Button
 {
     String buttonText = "Submit";
     boolean clicked;

@@ -92,7 +92,7 @@ public class Card extends Actor
     }   
 
     public void select() {
-        Observer observer = Observer.getObserver();
+        Observer observer = Observer.getInstance();
         observer.cardSelected(this);
         Color color = image.getColor();
         image.setColor(java.awt.Color.BLACK);

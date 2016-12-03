@@ -1,24 +1,36 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.awt.Color;
+import java.util.*;
 
 /**
- * Write a description of class Button here.
+ * Write a description of class ButtonFactory here.
  * 
- * @author Aaron Lam
- * @version 1.0 - updated 11-21-2016
+ * @author (your name) 
+ * @version (a version number or a date)
  */
-public abstract class ButtonFactory extends Actor
-{   
-    public ButtonFactory (String buttonText) {
-        GreenfootImage textImg = new GreenfootImage(" "+buttonText+" ", 24, Color.black, new Color(0, 0, 0, 0));
-        GreenfootImage image = new GreenfootImage(textImg.getWidth()+8, textImg.getHeight()+8);
-        image.setColor(Color.darkGray);
-        image.fill();
-        image.setColor(Color.lightGray);
-        image.fillRect(3, 3, image.getWidth()-6, image.getHeight()-6);
-        image.setColor(Color.black);
-        image.drawImage(textImg, (image.getWidth()-textImg.getWidth())/2, (image.getHeight()-textImg.getHeight())/2);
-        setImage(image);
+public class ButtonFactory
+{
+    private static HashMap<String, Button> buttonsMap = new HashMap<>();
+    
+    public static Button getButton (String buttonText) {
+        if (buttonsMap.containsKey(buttonText)) {
+            return buttonsMap.get(buttonText);
+        } else {
+            Button button = buildButton (buttonText);
+            buttonsMap.put(buttonText, button);
+            return button;
+        }
     }
     
+    public static Button buildButton (String buttonText) {
+        switch (buttonText) {
+            case "Start" : return new StartButton();
+            case "Next"  : return new NextLevelButton ();
+            case "Submit": return new SubmitButton();
+            case "Replay": return new ReplayButton();
+            case "Level1": return new Level1Button();
+            case "Level2": return new Level2Button();
+            case "Level3": return new Level3Button();
+        }
+        return null;
+    }
 }

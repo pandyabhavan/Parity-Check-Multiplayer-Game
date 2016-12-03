@@ -8,7 +8,7 @@ import java.awt.Color;
  * @author Aaron Lam
  * @version 1.0 - updated 11-21-2016
  */
-public class NextLevelButton extends ButtonFactory
+public class NextLevelButton extends Button
 {
     String buttonText = "Next Level";
     boolean clicked;
@@ -17,6 +17,7 @@ public class NextLevelButton extends ButtonFactory
     {
         super("Next Level");
     }
+    
 
     /**
      * Act - do whatever the NextButton wants to do. This method is called whenever

@@ -6,12 +6,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Replay extends ButtonFactory
+public class ReplayButton extends Button
 {
     String buttonText = "Replay";
     boolean clicked = false;
 
-    public Replay ()
+    public ReplayButton ()
     {
         super("Replay");
     }

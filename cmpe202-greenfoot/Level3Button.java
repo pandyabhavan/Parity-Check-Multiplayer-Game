@@ -6,11 +6,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Level2 extends ButtonFactory
+public class Level3Button extends Button
 {
-    public Level2(){
-        super("Level 2");
+    public Level3Button(){
+        super("Level 3");
     }
+    
     /**
      * Act - do whatever the Level1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -18,7 +19,7 @@ public class Level2 extends ButtonFactory
     public void act() 
     {
         if(Greenfoot.mouseClicked(this)) {
-            GameWorld gameWorld = new GameWorld(400);
+            GameWorld gameWorld = new GameWorld(500);
             Greenfoot.setWorld(gameWorld);
         }
     }    

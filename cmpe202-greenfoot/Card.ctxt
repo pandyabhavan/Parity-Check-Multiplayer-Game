@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Card
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Card\ here.\r\n\ \r\n\ @author\ Aaron\ Lam\r\n\ @version\ 1.0\ -\ updated\ 11-21-2016\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ Card\ here.\n\ \n\ @author\ Aaron\ Lam\n\ @version\ 1.0\ -\ updated\ 11-21-2016\n
 comment1.params=color
 comment1.target=void\ changeColor(java.awt.Color)
 comment10.params=
@@ -21,5 +21,5 @@ comment8.params=
 comment8.target=boolean\ isSelected()
 comment9.params=
 comment9.target=void\ act()
-comment9.text=\r\n\ Act\ -\ do\ whatever\ the\ BlackCard\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment9.text=\n\ Act\ -\ do\ whatever\ the\ BlackCard\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 numComments=11

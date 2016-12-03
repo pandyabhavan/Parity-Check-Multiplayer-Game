@@ -10,7 +10,7 @@ import java.util.*;
  * @author Aaron Lam
  * @version 1.0 - updated 11-21-2016
  */
-public class StartButton extends ButtonFactory
+public class StartButton extends Button
 {
     String buttonText = "Start";
     boolean clicked = false;
