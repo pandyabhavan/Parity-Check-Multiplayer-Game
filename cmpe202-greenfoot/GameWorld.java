@@ -9,7 +9,7 @@ import java.util.*;
  */
 public class GameWorld extends World
 {
-    public int size = 500;
+    public int size = 300;
     private Card selectedCard;
     
     public int getSize() {

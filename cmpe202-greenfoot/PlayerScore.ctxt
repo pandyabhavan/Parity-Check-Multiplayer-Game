@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=PlayerScore
+comment0.text=\n\ Write\ a\ description\ of\ class\ PlayerScore\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=playername\ score
+comment1.target=PlayerScore(java.lang.String,\ int)
+comment2.params=playername
+comment2.target=void\ setPlayername(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getPlayername()
+comment4.params=score
+comment4.target=void\ setScore(int)
+comment5.params=
+comment5.target=int\ getScore()
+numComments=6

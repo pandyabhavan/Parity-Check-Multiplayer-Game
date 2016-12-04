@@ -25,8 +25,10 @@ public class SubmitButton extends Button
 
     public void act()
     {
-        if(Greenfoot.mouseClicked(this) && !clicked) 
+        GameState gameState = GameState.getInstance();
+        if(Greenfoot.mouseClicked(this) && gameState.canSubmit()) 
         {
+            gameState.moveToNextState();
             clicked = true;
             boolean correct = false;
             List<Card> cardList = this.getWorld().getObjects(Card.class);

@@ -16,11 +16,7 @@ public class Start extends World
     public Start()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1);
-        int j = 20;
-        addObject(ButtonFactory.getButton("Level1"), (600-20)/2, j+=50);
-        addObject(ButtonFactory.getButton("Level2"), (600-20)/2, j+=50);
-        addObject(ButtonFactory.getButton("Level3"), (600-20)/2, j+=50);
-        
+        super(600, 400, 1); 
+        addObject(ButtonFactory.getButton("StartG"), 600/2, 400/2);
     }
 }

@@ -15,13 +15,13 @@ public class Card extends Actor
     private boolean isFlip = false;
     private boolean selected = false;
     private GreenfootImage image = new  GreenfootImage(size, size);
-    
+
     public void changeColor(Color color) {
         image.setColor(color);
         image.fill();
         setImage(image);
     }
-    
+
     public void shuffle () {
         image.setColor(java.awt.Color.WHITE);
         image.fill();
@@ -37,16 +37,15 @@ public class Card extends Actor
                 image.setColor(java.awt.Color.RED);
                 color = "RED";
             }
-            image.fill();
-            setImage(image);
-        }
-
-        if (color == "RED") {
-            image.setColor(java.awt.Color.RED);
         } else {
-            image.setColor(java.awt.Color.BLUE);
+            if (color == "RED") {
+                image.setColor(java.awt.Color.RED);
+            } else {
+                image.setColor(java.awt.Color.BLUE);
+            }
         }
         image.fill();
+        image.setTransparency(255);
         setImage(image);
     }
 

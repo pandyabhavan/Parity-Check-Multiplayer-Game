@@ -26,11 +26,14 @@ public class NextLevelButton extends Button
 
     public void act()
     {
-        if(Greenfoot.mouseClicked(this)) 
+        GameState gameState = GameState.getInstance();
+        if(Greenfoot.mouseClicked(this) && gameState.canNext()) 
         {
+            gameState.moveToNextState();
             int size = ((GameWorld) this.getWorld()).size;
             if (size == 600) {
                 System.out.println("END");
+                gameState.setState(new EndedState (gameState));
             } else {
                 GameWorld gameWorld = new GameWorld(size + 100);
                 Greenfoot.setWorld(gameWorld); 

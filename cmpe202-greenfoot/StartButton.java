@@ -27,9 +27,10 @@ public class StartButton extends Button
 
     public void act()
     {
-        if(Greenfoot.mouseClicked(this) && !clicked) 
+        GameState gameState = GameState.getInstance();
+        if(Greenfoot.mouseClicked(this) && gameState.canStart()) 
         {
-            clicked = true;
+            gameState.moveToNextState();
             Random rand = new Random();
             List <Timer> timer = this.getWorld().getObjects(Timer.class);
             timer.get(0).setRunning(true);

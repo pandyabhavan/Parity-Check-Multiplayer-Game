@@ -10,6 +10,34 @@ public class SingletonPlayer
 {
     private static SingletonPlayer instance;
     
+    private static int level;
+    private static int score;
+    private static String name;
+    
+    public int getLevel() {
+        return this.level;
+    }
+    
+    public void setLevel(int level) {
+        this.level = level;
+    }   
+    
+    public int getScore() {
+        return this.score;
+    }
+    
+    public void setScore(int score) {
+        this.score = score;
+    }
+    
+    public String getName() {
+        return this.name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    
     private SingletonPlayer() {
         
     }

@@ -23,13 +23,10 @@ public class ButtonFactory
     
     public static Button buildButton (String buttonText) {
         switch (buttonText) {
+            case "StartG": return new StartGameButton ();
             case "Start" : return new StartButton();
-            case "Next"  : return new NextLevelButton ();
             case "Submit": return new SubmitButton();
-            case "Replay": return new ReplayButton();
-            case "Level1": return new Level1Button();
-            case "Level2": return new Level2Button();
-            case "Level3": return new Level3Button();
+            case "Next"  : return new NextLevelButton ();
         }
         return null;
     }

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=CanStartState
+comment0.text=\n\ Write\ a\ description\ of\ class\ InitState\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=gameState
+comment1.target=CanStartState(GameState)
+comment2.params=
+comment2.target=void\ moveToNextState()
+comment3.params=
+comment3.target=boolean\ canStart()
+comment4.params=
+comment4.target=boolean\ canSubmit()
+comment5.params=
+comment5.target=boolean\ canNext()
+numComments=6
