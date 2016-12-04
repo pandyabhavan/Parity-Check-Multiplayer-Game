@@ -38,6 +38,10 @@ public class SingletonPlayer
         this.name = name;
     }
     
+    public void addScore(int score) {
+        this.score += score;
+    }
+    
     private SingletonPlayer() {
         
     }

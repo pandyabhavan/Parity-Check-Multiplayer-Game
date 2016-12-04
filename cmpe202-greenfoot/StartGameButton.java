@@ -34,6 +34,8 @@ public class StartGameButton extends Button
             SingletonPlayer player = SingletonPlayer.getInstance();
             player.setName(name);
             player.setScore(0);
+            GameState gameState = GameState.getInstance();
+            gameState.setState(gameState.getCanStartState());
         }
     }
 }

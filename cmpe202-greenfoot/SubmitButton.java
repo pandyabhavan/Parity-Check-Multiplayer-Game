@@ -54,9 +54,9 @@ public class SubmitButton extends Button
             SingletonPlayer player = SingletonPlayer.getInstance();
             int size = ((GameWorld) this.getWorld()).size;
             if (correct) {
-                int score = (size * 10000) / timeElapsed;
+                int score = (size * size) / (timeElapsed/1000);
                 System.out.println(score);
-                player.setScore(score);
+                player.addScore(score);
             }
         }
     }

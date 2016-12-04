@@ -17,11 +17,11 @@ import org.restlet.data.* ;
 public class NetAdaptor extends Actor
 {
     private static NetAdaptor instance;
-    private static String url = "http://gameserver-ed4741ba-1.ba56d9f4.cont.dockerapp.io:32773/gameserver";
-    private ClientResource client;
+    private static String url = "http://gameserver-ed4741ba-1.44437fad.cont.dockerapp.io:32778/gameserver";
 
     private NetAdaptor() {
         try {
+            ClientResource client;
             client = new ClientResource(url);
         } catch (Exception e) {
             System.out.println("NetAdaptor ERROR: " + e);
@@ -37,6 +37,7 @@ public class NetAdaptor extends Actor
 
     public String getAck() {
         try {
+            ClientResource client = new ClientResource(url);
             Representation result_string = client.get();
             JSONObject result = new JSONObject( result_string.getText() ) ;
             return  (String) result.get("ack"); 
@@ -46,44 +47,35 @@ public class NetAdaptor extends Actor
         return null;
     }
 
-    public boolean isHighScore(int score) {
-        ArrayList<PlayerScore> players = getHighScore();
-        PlayerScore player = players.get(players.size()-1);
-        if (player.getScore() < score) {
-            return true;
-        }
-        return false;
-    }
-
     public void writeHighScore(String playername, int score) {
-        if (!isHighScore(score)) {
-            return;
-        }
+        ClientResource client = new ClientResource(url);
         JSONObject json = new JSONObject();
         json.put("action", "setHighScore");
-        json.put("playername", playername);
+        json.put("playerName", playername);
         json.put("score", score);
 
         client.post(new JsonRepresentation(json), MediaType.APPLICATION_JSON);
     }
 
     public ArrayList<PlayerScore> getHighScore() {
+        ClientResource client = new ClientResource(url);
         ArrayList<PlayerScore> toReturn = new ArrayList<>();
+        
+        JSONObject json = new JSONObject();
+        json.put("action", "getHighScore");
+
+        Representation result_string = client.post(new JsonRepresentation(json), MediaType.APPLICATION_JSON);
+    
         try {
-            JSONObject json = new JSONObject();
-            json.put("action", "getHighScore");
-            client.post(new JsonRepresentation(json), MediaType.APPLICATION_JSON);
+            JSONObject obj = new JSONObject(result_string.getText());
+            JSONArray array = obj.getJSONArray("highScore");
             
-            Representation result_string = client.get();
-            JSONObject result = new JSONObject(result_string.getText());
-            JSONArray playerScore = result.getJSONArray("highScore");
-            
-            int size = playerScore.length();
-            for (int i = 0; i < size; ++i) {
-                String playername = playerScore.getJSONObject(i).getString("playername");
-                int score = playerScore.getJSONObject(i).getInt("score");
-                toReturn.add(new PlayerScore (playername, score));
+            for (int i = 0; i < array.length(); ++i) {
+                int score = array.getJSONObject(i).getInt("score");
+				String playerName = array.getJSONObject(i).getString("playerName");
+                toReturn.add(new PlayerScore(playerName, score));
             }
+            
             return toReturn;
         } catch (Exception e) {
             System.out.println("ERROR: " + e);
