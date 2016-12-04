@@ -45,22 +45,39 @@ public class NetAdaptor extends Actor
         }
         return null;
     }
-    
+
+    public boolean isHighScore(int score) {
+        ArrayList<PlayerScore> players = getHighScore();
+        PlayerScore player = players.get(players.size()-1);
+        if (player.getScore() < score) {
+            return true;
+        }
+        return false;
+    }
+
     public void writeHighScore(String playername, int score) {
+        if (!isHighScore(score)) {
+            return;
+        }
         JSONObject json = new JSONObject();
-        json.put("action", "writeHighScore");
+        json.put("action", "setHighScore");
         json.put("playername", playername);
         json.put("score", score);
-        
+
         client.post(new JsonRepresentation(json), MediaType.APPLICATION_JSON);
     }
 
     public ArrayList<PlayerScore> getHighScore() {
         ArrayList<PlayerScore> toReturn = new ArrayList<>();
         try {
+            JSONObject json = new JSONObject();
+            json.put("action", "getHighScore");
+            client.post(new JsonRepresentation(json), MediaType.APPLICATION_JSON);
+            
             Representation result_string = client.get();
             JSONObject result = new JSONObject(result_string.getText());
             JSONArray playerScore = result.getJSONArray("highScore");
+            
             int size = playerScore.length();
             for (int i = 0; i < size; ++i) {
                 String playername = playerScore.getJSONObject(i).getString("playername");

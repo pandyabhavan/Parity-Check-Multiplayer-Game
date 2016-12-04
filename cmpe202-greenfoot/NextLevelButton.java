@@ -31,9 +31,10 @@ public class NextLevelButton extends Button
         {
             gameState.moveToNextState();
             int size = ((GameWorld) this.getWorld()).size;
-            if (size == 600) {
-                System.out.println("END");
+            if (size >= 600) {
                 gameState.setState(new EndedState (gameState));
+                End gameWorld = new End();
+                Greenfoot.setWorld(gameWorld);
             } else {
                 GameWorld gameWorld = new GameWorld(size + 100);
                 Greenfoot.setWorld(gameWorld); 

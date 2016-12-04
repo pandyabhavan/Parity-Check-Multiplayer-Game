@@ -42,12 +42,7 @@ public class SubmitButton extends Button
                     card.changeColor(java.awt.Color.YELLOW);
                 }
             }
-            
-            if (correct) {
-                System.out.println("Correct");
-            } else {
-                System.out.println("Incorrect");
-            }
+
             
             List<Timer> timerList = this.getWorld().getObjects(Timer.class);
             
@@ -56,7 +51,13 @@ public class SubmitButton extends Button
             timer.setRunning(false);
             int timeElapsed = timer.getTime();
             
-            System.out.println(timeElapsed);
+            SingletonPlayer player = SingletonPlayer.getInstance();
+            int size = ((GameWorld) this.getWorld()).size;
+            if (correct) {
+                int score = (size * 10000) / timeElapsed;
+                System.out.println(score);
+                player.setScore(score);
+            }
         }
     }
 

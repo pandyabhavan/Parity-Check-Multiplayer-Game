@@ -4,7 +4,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class PlayerScore  
+public class PlayerScore 
 {
     private String playername;
     private int score;

@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.*;
 /**
  * Write a description of class StartGame here.
  * 
@@ -25,7 +25,15 @@ public class StartGameButton extends Button
         if(Greenfoot.mouseClicked(this)) 
         {
             GameWorld gameWorld = new GameWorld();
-            Greenfoot.setWorld(gameWorld); 
+            Greenfoot.setWorld(gameWorld);
+            
+            List<TextField> textFields = this.getWorld().getObjects(TextField.class);
+            TextField textField = textFields.get(0);
+            String name = textField.getText();
+            
+            SingletonPlayer player = SingletonPlayer.getInstance();
+            player.setName(name);
+            player.setScore(0);
         }
     }
 }
